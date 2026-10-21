@@ -1,0 +1,435 @@
+data.http.mi_ip: Reading...
+random_id.sufijo_bucket: Refreshing state... [id=UNdt6g]
+random_password.rds: Refreshing state... [id=none]
+data.http.mi_ip: Read complete after 0s [id=https://checkip.amazonaws.com]
+data.aws_availability_zones.disponibles: Reading...
+data.aws_region.actual: Reading...
+data.aws_ami.ubuntu: Reading...
+module.vpc.aws_vpc.this[0]: Refreshing state... [id=vpc-0a2f39df8dded86ed]
+data.aws_region.actual: Read complete after 0s [id=us-east-1]
+aws_s3_bucket.estatico: Refreshing state... [id=auy1103-dev-estatico-50d76dea]
+data.aws_availability_zones.disponibles: Read complete after 1s [id=us-east-1]
+data.aws_ami.ubuntu: Read complete after 1s [id=ami-02a9cdd4e98bc3c78]
+module.vpc.aws_default_security_group.this[0]: Refreshing state... [id=sg-0074c55d486566738]
+module.vpc.aws_default_route_table.default[0]: Refreshing state... [id=rtb-049a2baaf914ad9ce]
+module.vpc.aws_route_table.public[0]: Refreshing state... [id=rtb-020995a89b4d335c7]
+module.vpc.aws_default_network_acl.this[0]: Refreshing state... [id=acl-0dd93d1ee83046719]
+aws_security_group.alb["backend"]: Refreshing state... [id=sg-097223ad86c214fed]
+aws_lb_target_group.web: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-web/5de3b1ab99895a6a]
+module.vpc.aws_subnet.private[0]: Refreshing state... [id=subnet-01dbc12d28bde32c0]
+aws_lb_target_group.backend: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c]
+aws_security_group.alb["web"]: Refreshing state... [id=sg-0dbf500bfa10e72ea]
+module.vpc.aws_subnet.private[1]: Refreshing state... [id=subnet-003f13b87cb2ba307]
+module.vpc.aws_route_table.private[0]: Refreshing state... [id=rtb-0c41f67c601e7de14]
+module.vpc.aws_subnet.public[1]: Refreshing state... [id=subnet-0f77cfc9ed4459352]
+module.vpc.aws_subnet.public[0]: Refreshing state... [id=subnet-0824752a27709bc0c]
+module.vpc.aws_internet_gateway.this[0]: Refreshing state... [id=igw-086bd3996f3da27cb]
+module.web.aws_security_group.this: Refreshing state... [id=sg-077c4c7df1500e0c0]
+module.backend["backend-03"].aws_security_group.this: Refreshing state... [id=sg-0608510b68f16f76d]
+module.backend["backend-02"].aws_security_group.this: Refreshing state... [id=sg-0926d9ff7a4380143]
+module.backend["backend-01"].aws_security_group.this: Refreshing state... [id=sg-055bdb810e6ea90e0]
+module.vpc.aws_route_table_association.private[1]: Refreshing state... [id=rtbassoc-0b197b08e71da947f]
+module.vpc.aws_route_table_association.private[0]: Refreshing state... [id=rtbassoc-0fc14452f4c834887]
+module.vpc.aws_route_table_association.public[0]: Refreshing state... [id=rtbassoc-004d9d8681a72ab2d]
+module.vpc.aws_route_table_association.public[1]: Refreshing state... [id=rtbassoc-00af91f4503f3b421]
+aws_lb.backend: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:loadbalancer/app/auy1103-dev-alb-be/e5ba31fccf291723]
+aws_db_subnet_group.rds: Refreshing state... [id=auy1103-dev-rds-subnets]
+aws_lb.web: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:loadbalancer/app/auy1103-dev-alb-web/6d4c3c2b28f335b3]
+module.vpc.aws_route.public_internet_gateway[0]: Refreshing state... [id=r-rtb-020995a89b4d335c71080289494]
+module.vpc.aws_eip.nat[0]: Refreshing state... [id=eipalloc-0e07ec16b1fb6405d]
+module.web.aws_instance.this: Refreshing state... [id=i-02ddfdd5a84c9571d]
+module.backend["backend-01"].aws_instance.this: Refreshing state... [id=i-0521757d4f2813a80]
+module.backend["backend-03"].aws_instance.this: Refreshing state... [id=i-059393e4d2e94899f]
+module.backend["backend-02"].aws_instance.this: Refreshing state... [id=i-0d63227d40f98efdd]
+module.vpc.aws_nat_gateway.this[0]: Refreshing state... [id=nat-0f31eb0dfa06e76c5]
+module.vpc.aws_route.private_nat_gateway[0]: Refreshing state... [id=r-rtb-0c41f67c601e7de141080289494]
+aws_lb_listener.backend_http: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:listener/app/auy1103-dev-alb-be/e5ba31fccf291723/df1b3c3005be44f4]
+aws_lb_listener.web_http: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:listener/app/auy1103-dev-alb-web/6d4c3c2b28f335b3/435b1edb61321ff6]
+aws_lb_target_group_attachment.web: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-web/5de3b1ab99895a6a,i-02ddfdd5a84c9571d,80]
+aws_lb_target_group_attachment.backend["backend-03"]: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c,i-059393e4d2e94899f,80]
+aws_lb_target_group_attachment.backend["backend-01"]: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c,i-0521757d4f2813a80,80]
+aws_lb_target_group_attachment.backend["backend-02"]: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c,i-0d63227d40f98efdd,80]
+aws_security_group.rds: Refreshing state... [id=sg-05910bcf7770917dd]
+aws_db_instance.mysql: Refreshing state... [id=db-U3I3UTEMPCUB54XSV4ECW2WU74]
+
+Note: Objects have changed outside of Terraform
+
+Terraform detected the following changes made outside of Terraform since the
+last "terraform apply" which may have affected this plan:
+
+  # aws_s3_bucket.estatico has been deleted
+  - resource "aws_s3_bucket" "estatico" {
+      - arn                         = "arn:aws:s3:::auy1103-dev-estatico-50d76dea" -> null
+      - bucket_regional_domain_name = "auy1103-dev-estatico-50d76dea.s3.us-east-1.amazonaws.com" -> null
+      - id                          = "auy1103-dev-estatico-50d76dea" -> null
+        tags                        = {
+            "Asignatura"  = "AUY1103"
+            "CostCenter"  = "academico-dev"
+            "Environment" = "dev"
+            "ManagedBy"   = "Terraform"
+            "Name"        = "auy1103-dev-estatico"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+        # (11 unchanged attributes hidden)
+
+        # (3 unchanged blocks hidden)
+    }
+
+
+Unless you have made equivalent changes to your configuration, or ignored the
+relevant attributes using ignore_changes, the following plan may include
+actions to undo or respond to these changes.
+
+─────────────────────────────────────────────────────────────────────────────
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+ <= read (data resources)
+
+Terraform will perform the following actions:
+
+  # data.aws_iam_policy_document.bucket_cdn will be read during apply
+  # (config refers to values not yet known)
+ <= data "aws_iam_policy_document" "bucket_cdn" {
+      + id            = (known after apply)
+      + json          = (known after apply)
+      + minified_json = (known after apply)
+
+      + statement {
+          + actions   = [
+              + "s3:GetObject",
+            ]
+          + effect    = "Allow"
+          + resources = [
+              + (known after apply),
+            ]
+          + sid       = "AllowCloudFrontOAC"
+
+          + condition {
+              + test     = "StringEquals"
+              + values   = [
+                  + (known after apply),
+                ]
+              + variable = "AWS:SourceArn"
+            }
+
+          + principals {
+              + identifiers = [
+                  + "cloudfront.amazonaws.com",
+                ]
+              + type        = "Service"
+            }
+        }
+    }
+
+  # aws_cloudfront_distribution.cdn will be created
+  + resource "aws_cloudfront_distribution" "cdn" {
+      + arn                             = (known after apply)
+      + caller_reference                = (known after apply)
+      + comment                         = "CDN auy1103-dev"
+      + continuous_deployment_policy_id = (known after apply)
+      + default_root_object             = "index.html"
+      + domain_name                     = (known after apply)
+      + enabled                         = true
+      + etag                            = (known after apply)
+      + hosted_zone_id                  = (known after apply)
+      + http_version                    = "http2"
+      + id                              = (known after apply)
+      + in_progress_validation_batches  = (known after apply)
+      + is_ipv6_enabled                 = true
+      + last_modified_time              = (known after apply)
+      + logging_v1_enabled              = (known after apply)
+      + price_class                     = "PriceClass_100"
+      + retain_on_delete                = false
+      + staging                         = false
+      + status                          = (known after apply)
+      + tags                            = {
+          + "Asignatura"  = "AUY1103"
+          + "CostCenter"  = "academico-dev"
+          + "Environment" = "dev"
+          + "ManagedBy"   = "Terraform"
+          + "Name"        = "auy1103-dev-cdn"
+          + "Owner"       = "fer.galdamez@duocuc.cl"
+          + "Project"     = "auy1103"
+        }
+      + tags_all                        = {
+          + "Asignatura"  = "AUY1103"
+          + "CostCenter"  = "academico-dev"
+          + "Environment" = "dev"
+          + "ManagedBy"   = "Terraform"
+          + "Name"        = "auy1103-dev-cdn"
+          + "Owner"       = "fer.galdamez@duocuc.cl"
+          + "Project"     = "auy1103"
+        }
+      + trusted_key_groups              = (known after apply)
+      + trusted_signers                 = (known after apply)
+      + wait_for_deployment             = true
+
+      + default_cache_behavior {
+          + allowed_methods        = [
+              + "GET",
+              + "HEAD",
+            ]
+          + cached_methods         = [
+              + "GET",
+              + "HEAD",
+            ]
+          + compress               = true
+          + default_ttl            = 3600
+          + max_ttl                = 86400
+          + min_ttl                = 0
+          + target_origin_id       = (known after apply)
+          + trusted_key_groups     = (known after apply)
+          + trusted_signers        = (known after apply)
+          + viewer_protocol_policy = "redirect-to-https"
+
+          + forwarded_values {
+              + headers                 = (known after apply)
+              + query_string            = false
+              + query_string_cache_keys = (known after apply)
+
+              + cookies {
+                  + forward           = "none"
+                  + whitelisted_names = (known after apply)
+                }
+            }
+
+          + grpc_config (known after apply)
+        }
+
+      + origin {
+          + connection_attempts         = 3
+          + connection_timeout          = 10
+          + domain_name                 = (known after apply)
+          + origin_access_control_id    = (known after apply)
+          + origin_id                   = (known after apply)
+          + response_completion_timeout = (known after apply)
+            # (1 unchanged attribute hidden)
+        }
+
+      + restrictions {
+          + geo_restriction {
+              + locations        = (known after apply)
+              + restriction_type = "none"
+            }
+        }
+
+      + viewer_certificate {
+          + cloudfront_default_certificate = true
+          + minimum_protocol_version       = "TLSv1"
+        }
+    }
+
+  # aws_cloudfront_origin_access_control.s3 will be created
+  + resource "aws_cloudfront_origin_access_control" "s3" {
+      + arn                               = (known after apply)
+      + description                       = (known after apply)
+      + etag                              = (known after apply)
+      + id                                = (known after apply)
+      + name                              = "auy1103-dev-oac"
+      + origin_access_control_origin_type = "s3"
+      + signing_behavior                  = "always"
+      + signing_protocol                  = "sigv4"
+    }
+
+  # aws_s3_bucket.estatico will be created
+  + resource "aws_s3_bucket" "estatico" {
+      + acceleration_status         = (known after apply)
+      + acl                         = (known after apply)
+      + arn                         = (known after apply)
+      + bucket                      = "auy1103-dev-estatico-50d76dea"
+      + bucket_domain_name          = (known after apply)
+      + bucket_namespace            = (known after apply)
+      + bucket_prefix               = (known after apply)
+      + bucket_region               = (known after apply)
+      + bucket_regional_domain_name = (known after apply)
+      + force_destroy               = true
+      + hosted_zone_id              = (known after apply)
+      + id                          = (known after apply)
+      + object_lock_enabled         = (known after apply)
+      + policy                      = (known after apply)
+      + region                      = "us-east-1"
+      + request_payer               = (known after apply)
+      + tags                        = {
+          + "Asignatura"  = "AUY1103"
+          + "CostCenter"  = "academico-dev"
+          + "Environment" = "dev"
+          + "ManagedBy"   = "Terraform"
+          + "Name"        = "auy1103-dev-estatico"
+          + "Owner"       = "fer.galdamez@duocuc.cl"
+          + "Project"     = "auy1103"
+        }
+      + tags_all                    = {
+          + "Asignatura"  = "AUY1103"
+          + "CostCenter"  = "academico-dev"
+          + "Environment" = "dev"
+          + "ManagedBy"   = "Terraform"
+          + "Name"        = "auy1103-dev-estatico"
+          + "Owner"       = "fer.galdamez@duocuc.cl"
+          + "Project"     = "auy1103"
+        }
+      + website_domain              = (known after apply)
+      + website_endpoint            = (known after apply)
+
+      + cors_rule (known after apply)
+
+      + grant (known after apply)
+
+      + lifecycle_rule (known after apply)
+
+      + logging (known after apply)
+
+      + object_lock_configuration (known after apply)
+
+      + replication_configuration (known after apply)
+
+      + server_side_encryption_configuration (known after apply)
+
+      + versioning (known after apply)
+
+      + website (known after apply)
+    }
+
+  # aws_s3_bucket_policy.estatico will be created
+  + resource "aws_s3_bucket_policy" "estatico" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+      + policy = (known after apply)
+      + region = "us-east-1"
+    }
+
+  # aws_s3_bucket_public_access_block.estatico will be created
+  + resource "aws_s3_bucket_public_access_block" "estatico" {
+      + block_public_acls       = true
+      + block_public_policy     = true
+      + bucket                  = (known after apply)
+      + id                      = (known after apply)
+      + ignore_public_acls      = true
+      + region                  = "us-east-1"
+      + restrict_public_buckets = true
+    }
+
+  # aws_s3_bucket_server_side_encryption_configuration.estatico will be created
+  + resource "aws_s3_bucket_server_side_encryption_configuration" "estatico" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+      + region = "us-east-1"
+
+      + rule {
+          + blocked_encryption_types = (known after apply)
+          + bucket_key_enabled       = (known after apply)
+
+          + apply_server_side_encryption_by_default {
+              + kms_master_key_id = (known after apply)
+              + sse_algorithm     = "AES256"
+            }
+        }
+    }
+
+  # aws_s3_bucket_versioning.estatico will be created
+  + resource "aws_s3_bucket_versioning" "estatico" {
+      + bucket = (known after apply)
+      + id     = (known after apply)
+      + region = "us-east-1"
+
+      + versioning_configuration {
+          + mfa_delete = (known after apply)
+          + status     = "Enabled"
+        }
+    }
+
+  # aws_s3_object.index will be created
+  + resource "aws_s3_object" "index" {
+      + acl                    = (known after apply)
+      + arn                    = (known after apply)
+      + bucket                 = (known after apply)
+      + bucket_key_enabled     = (known after apply)
+      + checksum_crc32         = (known after apply)
+      + checksum_crc32c        = (known after apply)
+      + checksum_crc64nvme     = (known after apply)
+      + checksum_sha1          = (known after apply)
+      + checksum_sha256        = (known after apply)
+      + content                = <<-EOT
+            <!DOCTYPE html>
+            <html lang="es">
+            <head><meta charset="utf-8"><title>auy1103 CDN</title></head>
+            <body style="font-family:sans-serif;text-align:center;margin-top:6%">
+              <h1>Contenido servido por CloudFront + S3 (OAC)</h1>
+              <h2>Alumno: Fernando Galdamez y Jose Villaroel</h2>
+              <p>Entorno: dev</p>
+              <img src="/logo.svg" alt="Imagen desde S3 via CloudFront" style="margin-top:20px;box-shadow:0 8px 24px rgba(0,0,0,0.2);border-radius:16px"/>
+            </body>
+            </html>
+        EOT
+      + content_type           = "text/html; charset=utf-8"
+      + etag                   = "494167e70f48f390021b3dd2137b1320"
+      + force_destroy          = false
+      + id                     = (known after apply)
+      + key                    = "index.html"
+      + kms_key_id             = (known after apply)
+      + region                 = "us-east-1"
+      + server_side_encryption = (known after apply)
+      + storage_class          = (known after apply)
+      + tags_all               = {
+          + "Asignatura"  = "AUY1103"
+          + "CostCenter"  = "academico-dev"
+          + "Environment" = "dev"
+          + "ManagedBy"   = "Terraform"
+          + "Owner"       = "fer.galdamez@duocuc.cl"
+          + "Project"     = "auy1103"
+        }
+      + version_id             = (known after apply)
+    }
+
+  # aws_s3_object.logo_svg will be created
+  + resource "aws_s3_object" "logo_svg" {
+      + acl                    = (known after apply)
+      + arn                    = (known after apply)
+      + bucket                 = (known after apply)
+      + bucket_key_enabled     = (known after apply)
+      + checksum_crc32         = (known after apply)
+      + checksum_crc32c        = (known after apply)
+      + checksum_crc64nvme     = (known after apply)
+      + checksum_sha1          = (known after apply)
+      + checksum_sha256        = (known after apply)
+      + content                = <<-EOT
+            <svg xmlns="http://www.w3.org/2000/svg" width="520" height="220" viewBox="0 0 520 220">
+              <rect width="520" height="220" rx="16" fill="#0f172a"/>
+              <text x="260" y="85" font-family="Arial,sans-serif" font-size="26" font-weight="bold" fill="#38bdf8" text-anchor="middle">Duoc UC - AUY1103</text>
+              <text x="260" y="130" font-family="Arial,sans-serif" font-size="20" fill="#f8fafc" text-anchor="middle">Alumno: Fernando Galdamez y Jose Villaroel</text>
+              <text x="260" y="170" font-family="Arial,sans-serif" font-size="16" fill="#94a3b8" text-anchor="middle">CloudFront + S3 (OAC) | Entorno: dev</text>
+            </svg>
+        EOT
+      + content_type           = "image/svg+xml"
+      + etag                   = "6d7379ff644a76e58d604dfdf9bb48da"
+      + force_destroy          = false
+      + id                     = (known after apply)
+      + key                    = "logo.svg"
+      + kms_key_id             = (known after apply)
+      + region                 = "us-east-1"
+      + server_side_encryption = (known after apply)
+      + storage_class          = (known after apply)
+      + tags_all               = {
+          + "Asignatura"  = "AUY1103"
+          + "CostCenter"  = "academico-dev"
+          + "Environment" = "dev"
+          + "ManagedBy"   = "Terraform"
+          + "Owner"       = "fer.galdamez@duocuc.cl"
+          + "Project"     = "auy1103"
+        }
+      + version_id             = (known after apply)
+    }
+
+Plan: 9 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  + bucket_name          = (known after apply)
+  + cloudfront_image_url = (known after apply)
+  + cloudfront_url       = (known after apply)
+
+─────────────────────────────────────────────────────────────────────────────
+
+Note: You didn't use the -out option to save this plan, so Terraform can't
+guarantee to take exactly these actions if you run "terraform apply" now.

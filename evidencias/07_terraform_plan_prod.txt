@@ -1,0 +1,2172 @@
+random_password.rds: Refreshing state... [id=none]
+data.http.mi_ip: Reading...
+data.http.mi_ip: Read complete after 1s [id=https://checkip.amazonaws.com]
+data.aws_ami.ubuntu: Reading...
+data.aws_availability_zones.disponibles: Reading...
+module.vpc.aws_vpc.this[0]: Refreshing state... [id=vpc-0a2f39df8dded86ed]
+data.aws_availability_zones.disponibles: Read complete after 0s [id=us-east-1]
+data.aws_ami.ubuntu: Read complete after 1s [id=ami-02a9cdd4e98bc3c78]
+module.vpc.aws_default_route_table.default[0]: Refreshing state... [id=rtb-049a2baaf914ad9ce]
+module.vpc.aws_default_security_group.this[0]: Refreshing state... [id=sg-0074c55d486566738]
+module.vpc.aws_route_table.private[0]: Refreshing state... [id=rtb-0c41f67c601e7de14]
+aws_lb_target_group.web: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-web/5de3b1ab99895a6a]
+aws_lb_target_group.backend: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c]
+module.vpc.aws_default_network_acl.this[0]: Refreshing state... [id=acl-0dd93d1ee83046719]
+module.vpc.aws_subnet.private[0]: Refreshing state... [id=subnet-01dbc12d28bde32c0]
+module.vpc.aws_subnet.private[1]: Refreshing state... [id=subnet-003f13b87cb2ba307]
+aws_security_group.alb["backend"]: Refreshing state... [id=sg-097223ad86c214fed]
+aws_security_group.alb["web"]: Refreshing state... [id=sg-0dbf500bfa10e72ea]
+module.vpc.aws_subnet.public[0]: Refreshing state... [id=subnet-0824752a27709bc0c]
+module.vpc.aws_subnet.public[1]: Refreshing state... [id=subnet-0f77cfc9ed4459352]
+module.vpc.aws_internet_gateway.this[0]: Refreshing state... [id=igw-086bd3996f3da27cb]
+module.vpc.aws_route_table.public[0]: Refreshing state... [id=rtb-020995a89b4d335c7]
+module.vpc.aws_route_table_association.private[1]: Refreshing state... [id=rtbassoc-0b197b08e71da947f]
+module.vpc.aws_route_table_association.private[0]: Refreshing state... [id=rtbassoc-0fc14452f4c834887]
+module.web.aws_security_group.this: Refreshing state... [id=sg-077c4c7df1500e0c0]
+module.backend["backend-01"].aws_security_group.this: Refreshing state... [id=sg-055bdb810e6ea90e0]
+module.backend["backend-02"].aws_security_group.this: Refreshing state... [id=sg-0926d9ff7a4380143]
+module.backend["backend-03"].aws_security_group.this: Refreshing state... [id=sg-0608510b68f16f76d]
+module.vpc.aws_eip.nat[0]: Refreshing state... [id=eipalloc-0e07ec16b1fb6405d]
+module.vpc.aws_route.public_internet_gateway[0]: Refreshing state... [id=r-rtb-020995a89b4d335c71080289494]
+module.vpc.aws_route_table_association.public[0]: Refreshing state... [id=rtbassoc-004d9d8681a72ab2d]
+module.vpc.aws_route_table_association.public[1]: Refreshing state... [id=rtbassoc-00af91f4503f3b421]
+aws_lb.web: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:loadbalancer/app/auy1103-dev-alb-web/6d4c3c2b28f335b3]
+aws_lb.backend: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:loadbalancer/app/auy1103-dev-alb-be/e5ba31fccf291723]
+aws_db_subnet_group.rds: Refreshing state... [id=auy1103-dev-rds-subnets]
+module.web.aws_instance.this: Refreshing state... [id=i-02c503b10a4bc707a]
+module.backend["backend-01"].aws_instance.this: Refreshing state... [id=i-0e3327af281492a79]
+module.backend["backend-03"].aws_instance.this: Refreshing state... [id=i-0ca301b0aa7a9f162]
+module.backend["backend-02"].aws_instance.this: Refreshing state... [id=i-0b5873b01b7a49704]
+module.vpc.aws_nat_gateway.this[0]: Refreshing state... [id=nat-0f31eb0dfa06e76c5]
+module.vpc.aws_route.private_nat_gateway[0]: Refreshing state... [id=r-rtb-0c41f67c601e7de141080289494]
+aws_lb_listener.backend_http: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:listener/app/auy1103-dev-alb-be/e5ba31fccf291723/df1b3c3005be44f4]
+aws_lb_listener.web_http: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:listener/app/auy1103-dev-alb-web/6d4c3c2b28f335b3/435b1edb61321ff6]
+aws_lb_target_group_attachment.web: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-web/5de3b1ab99895a6a,i-02c503b10a4bc707a,80]
+aws_lb_target_group_attachment.backend["backend-01"]: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c,i-0e3327af281492a79,80]
+aws_lb_target_group_attachment.backend["backend-03"]: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c,i-0ca301b0aa7a9f162,80]
+aws_lb_target_group_attachment.backend["backend-02"]: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c,i-0b5873b01b7a49704,80]
+aws_security_group.rds: Refreshing state... [id=sg-05910bcf7770917dd]
+aws_db_instance.mysql: Refreshing state... [id=db-U3I3UTEMPCUB54XSV4ECW2WU74]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+  ~ update in-place
+-/+ destroy and then create replacement
++/- create replacement and then destroy
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysql will be updated in-place
+  ~ resource "aws_db_instance" "mysql" {
+      ~ db_subnet_group_name                  = "auy1103-dev-rds-subnets" -> "auy1103-prod-rds-subnets"
+        id                                    = "db-U3I3UTEMPCUB54XSV4ECW2WU74"
+      ~ identifier                            = "auy1103-dev-mysql" -> "auy1103-prod-mysql"
+      ~ tags                                  = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-mysql" -> "auy1103-prod-mysql"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+      ~ tags_all                              = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-mysql" -> "auy1103-prod-mysql"
+            # (4 unchanged elements hidden)
+        }
+      ~ vpc_security_group_ids                = [
+          - "sg-05910bcf7770917dd",
+        ] -> (known after apply)
+        # (69 unchanged attributes hidden)
+    }
+
+  # aws_db_subnet_group.rds must be replaced
+-/+ resource "aws_db_subnet_group" "rds" {
+      ~ arn                     = "arn:aws:rds:us-east-1:151063323597:subgrp:auy1103-dev-rds-subnets" -> (known after apply)
+      ~ id                      = "auy1103-dev-rds-subnets" -> (known after apply)
+      ~ name                    = "auy1103-dev-rds-subnets" -> "auy1103-prod-rds-subnets" # forces replacement
+      + name_prefix             = (known after apply)
+      ~ subnet_ids              = [
+          - "subnet-0824752a27709bc0c",
+          - "subnet-0f77cfc9ed4459352",
+        ] -> (known after apply)
+      ~ supported_network_types = [
+          - "IPV4",
+        ] -> (known after apply)
+      ~ tags                    = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-rds-subnets" -> "auy1103-prod-rds-subnets"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+      ~ tags_all                = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-rds-subnets" -> "auy1103-prod-rds-subnets"
+            # (4 unchanged elements hidden)
+        }
+      ~ vpc_id                  = "vpc-0a2f39df8dded86ed" -> (known after apply)
+        # (2 unchanged attributes hidden)
+    }
+
+  # aws_lb.backend must be replaced
+-/+ resource "aws_lb" "backend" {
+      ~ arn                                                          = "arn:aws:elasticloadbalancing:us-east-1:151063323597:loadbalancer/app/auy1103-dev-alb-be/e5ba31fccf291723" -> (known after apply)
+      ~ arn_suffix                                                   = "app/auy1103-dev-alb-be/e5ba31fccf291723" -> (known after apply)
+      ~ dns_name                                                     = "auy1103-dev-alb-be-483512929.us-east-1.elb.amazonaws.com" -> (known after apply)
+      - enable_cross_zone_load_balancing                             = true -> null
+      ~ enable_prefix_for_ipv6_source_nat                            = "off" -> (known after apply)
+      + enforce_security_group_inbound_rules_on_private_link_traffic = (known after apply)
+      ~ id                                                           = "arn:aws:elasticloadbalancing:us-east-1:151063323597:loadbalancer/app/auy1103-dev-alb-be/e5ba31fccf291723" -> (known after apply)
+      ~ ip_address_type                                              = "ipv4" -> (known after apply)
+      ~ name                                                         = "auy1103-dev-alb-be" -> "auy1103-prod-alb-be" # forces replacement
+      + name_prefix                                                  = (known after apply)
+      + secondary_ips_auto_assigned_per_subnet                       = (known after apply)
+      ~ security_groups                                              = [
+          - "sg-097223ad86c214fed",
+        ] -> (known after apply)
+      ~ subnets                                                      = [
+          - "subnet-0824752a27709bc0c",
+          - "subnet-0f77cfc9ed4459352",
+        ] -> (known after apply)
+      ~ tags                                                         = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-alb-be" -> "auy1103-prod-alb-be"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+      ~ tags_all                                                     = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-alb-be" -> "auy1103-prod-alb-be"
+            # (4 unchanged elements hidden)
+        }
+      ~ vpc_id                                                       = "vpc-0a2f39df8dded86ed" -> (known after apply)
+      ~ zone_id                                                      = "Z35SXDOTRQ7X7K" -> (known after apply)
+        # (16 unchanged attributes hidden)
+
+      - access_logs {
+          - enabled = false -> null
+            # (2 unchanged attributes hidden)
+        }
+
+      - connection_logs {
+          - enabled = false -> null
+            # (2 unchanged attributes hidden)
+        }
+
+      - health_check_logs {
+          - enabled = false -> null
+            # (2 unchanged attributes hidden)
+        }
+
+      ~ subnet_mapping (known after apply)
+      - subnet_mapping {
+          - subnet_id            = "subnet-0824752a27709bc0c" -> null
+            # (4 unchanged attributes hidden)
+        }
+      - subnet_mapping {
+          - subnet_id            = "subnet-0f77cfc9ed4459352" -> null
+            # (4 unchanged attributes hidden)
+        }
+    }
+
+  # aws_lb.web must be replaced
+-/+ resource "aws_lb" "web" {
+      ~ arn                                                          = "arn:aws:elasticloadbalancing:us-east-1:151063323597:loadbalancer/app/auy1103-dev-alb-web/6d4c3c2b28f335b3" -> (known after apply)
+      ~ arn_suffix                                                   = "app/auy1103-dev-alb-web/6d4c3c2b28f335b3" -> (known after apply)
+      ~ dns_name                                                     = "auy1103-dev-alb-web-1441100790.us-east-1.elb.amazonaws.com" -> (known after apply)
+      - enable_cross_zone_load_balancing                             = true -> null
+      ~ enable_prefix_for_ipv6_source_nat                            = "off" -> (known after apply)
+      + enforce_security_group_inbound_rules_on_private_link_traffic = (known after apply)
+      ~ id                                                           = "arn:aws:elasticloadbalancing:us-east-1:151063323597:loadbalancer/app/auy1103-dev-alb-web/6d4c3c2b28f335b3" -> (known after apply)
+      ~ ip_address_type                                              = "ipv4" -> (known after apply)
+      ~ name                                                         = "auy1103-dev-alb-web" -> "auy1103-prod-alb-web" # forces replacement
+      + name_prefix                                                  = (known after apply)
+      + secondary_ips_auto_assigned_per_subnet                       = (known after apply)
+      ~ security_groups                                              = [
+          - "sg-0dbf500bfa10e72ea",
+        ] -> (known after apply)
+      ~ subnets                                                      = [
+          - "subnet-0824752a27709bc0c",
+          - "subnet-0f77cfc9ed4459352",
+        ] -> (known after apply)
+      ~ tags                                                         = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-alb-web" -> "auy1103-prod-alb-web"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+      ~ tags_all                                                     = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-alb-web" -> "auy1103-prod-alb-web"
+            # (4 unchanged elements hidden)
+        }
+      ~ vpc_id                                                       = "vpc-0a2f39df8dded86ed" -> (known after apply)
+      ~ zone_id                                                      = "Z35SXDOTRQ7X7K" -> (known after apply)
+        # (16 unchanged attributes hidden)
+
+      - access_logs {
+          - enabled = false -> null
+            # (2 unchanged attributes hidden)
+        }
+
+      - connection_logs {
+          - enabled = false -> null
+            # (2 unchanged attributes hidden)
+        }
+
+      - health_check_logs {
+          - enabled = false -> null
+            # (2 unchanged attributes hidden)
+        }
+
+      ~ subnet_mapping (known after apply)
+      - subnet_mapping {
+          - subnet_id            = "subnet-0824752a27709bc0c" -> null
+            # (4 unchanged attributes hidden)
+        }
+      - subnet_mapping {
+          - subnet_id            = "subnet-0f77cfc9ed4459352" -> null
+            # (4 unchanged attributes hidden)
+        }
+    }
+
+  # aws_lb_listener.backend_http must be replaced
+-/+ resource "aws_lb_listener" "backend_http" {
+      ~ arn                                                                   = "arn:aws:elasticloadbalancing:us-east-1:151063323597:listener/app/auy1103-dev-alb-be/e5ba31fccf291723/df1b3c3005be44f4" -> (known after apply)
+      ~ id                                                                    = "arn:aws:elasticloadbalancing:us-east-1:151063323597:listener/app/auy1103-dev-alb-be/e5ba31fccf291723/df1b3c3005be44f4" -> (known after apply)
+      ~ load_balancer_arn                                                     = "arn:aws:elasticloadbalancing:us-east-1:151063323597:loadbalancer/app/auy1103-dev-alb-be/e5ba31fccf291723" -> (known after apply) # forces replacement
+      + routing_http_request_x_amzn_mtls_clientcert_header_name               = (known after apply)
+      + routing_http_request_x_amzn_mtls_clientcert_issuer_header_name        = (known after apply)
+      + routing_http_request_x_amzn_mtls_clientcert_leaf_header_name          = (known after apply)
+      + routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name = (known after apply)
+      + routing_http_request_x_amzn_mtls_clientcert_subject_header_name       = (known after apply)
+      + routing_http_request_x_amzn_mtls_clientcert_validity_header_name      = (known after apply)
+      + routing_http_request_x_amzn_tls_cipher_suite_header_name              = (known after apply)
+      + routing_http_request_x_amzn_tls_version_header_name                   = (known after apply)
+      + routing_http_response_access_control_allow_credentials_header_value   = (known after apply)
+      + routing_http_response_access_control_allow_headers_header_value       = (known after apply)
+      + routing_http_response_access_control_allow_methods_header_value       = (known after apply)
+      + routing_http_response_access_control_allow_origin_header_value        = (known after apply)
+      + routing_http_response_access_control_expose_headers_header_value      = (known after apply)
+      + routing_http_response_access_control_max_age_header_value             = (known after apply)
+      + routing_http_response_content_security_policy_header_value            = (known after apply)
+      ~ routing_http_response_server_enabled                                  = true -> (known after apply)
+      + routing_http_response_strict_transport_security_header_value          = (known after apply)
+      + routing_http_response_x_content_type_options_header_value             = (known after apply)
+      + routing_http_response_x_frame_options_header_value                    = (known after apply)
+      + ssl_policy                                                            = (known after apply)
+      - tags                                                                  = {
+          - "CostCenter"  = "academico-dev"
+          - "Environment" = "dev"
+        } -> null
+      ~ tags_all                                                              = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            # (4 unchanged elements hidden)
+        }
+      + tcp_idle_timeout_seconds                                              = (known after apply)
+        # (3 unchanged attributes hidden)
+
+      ~ default_action {
+          ~ order            = 1 -> (known after apply)
+          ~ target_group_arn = "arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c" -> (known after apply)
+            # (1 unchanged attribute hidden)
+        }
+
+      ~ mutual_authentication (known after apply)
+    }
+
+  # aws_lb_listener.web_http must be replaced
+-/+ resource "aws_lb_listener" "web_http" {
+      ~ arn                                                                   = "arn:aws:elasticloadbalancing:us-east-1:151063323597:listener/app/auy1103-dev-alb-web/6d4c3c2b28f335b3/435b1edb61321ff6" -> (known after apply)
+      ~ id                                                                    = "arn:aws:elasticloadbalancing:us-east-1:151063323597:listener/app/auy1103-dev-alb-web/6d4c3c2b28f335b3/435b1edb61321ff6" -> (known after apply)
+      ~ load_balancer_arn                                                     = "arn:aws:elasticloadbalancing:us-east-1:151063323597:loadbalancer/app/auy1103-dev-alb-web/6d4c3c2b28f335b3" -> (known after apply) # forces replacement
+      + routing_http_request_x_amzn_mtls_clientcert_header_name               = (known after apply)
+      + routing_http_request_x_amzn_mtls_clientcert_issuer_header_name        = (known after apply)
+      + routing_http_request_x_amzn_mtls_clientcert_leaf_header_name          = (known after apply)
+      + routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name = (known after apply)
+      + routing_http_request_x_amzn_mtls_clientcert_subject_header_name       = (known after apply)
+      + routing_http_request_x_amzn_mtls_clientcert_validity_header_name      = (known after apply)
+      + routing_http_request_x_amzn_tls_cipher_suite_header_name              = (known after apply)
+      + routing_http_request_x_amzn_tls_version_header_name                   = (known after apply)
+      + routing_http_response_access_control_allow_credentials_header_value   = (known after apply)
+      + routing_http_response_access_control_allow_headers_header_value       = (known after apply)
+      + routing_http_response_access_control_allow_methods_header_value       = (known after apply)
+      + routing_http_response_access_control_allow_origin_header_value        = (known after apply)
+      + routing_http_response_access_control_expose_headers_header_value      = (known after apply)
+      + routing_http_response_access_control_max_age_header_value             = (known after apply)
+      + routing_http_response_content_security_policy_header_value            = (known after apply)
+      ~ routing_http_response_server_enabled                                  = true -> (known after apply)
+      + routing_http_response_strict_transport_security_header_value          = (known after apply)
+      + routing_http_response_x_content_type_options_header_value             = (known after apply)
+      + routing_http_response_x_frame_options_header_value                    = (known after apply)
+      + ssl_policy                                                            = (known after apply)
+      - tags                                                                  = {
+          - "CostCenter"  = "academico-dev"
+          - "Environment" = "dev"
+        } -> null
+      ~ tags_all                                                              = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            # (4 unchanged elements hidden)
+        }
+      + tcp_idle_timeout_seconds                                              = (known after apply)
+        # (3 unchanged attributes hidden)
+
+      ~ default_action {
+          ~ order            = 1 -> (known after apply)
+          ~ target_group_arn = "arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-web/5de3b1ab99895a6a" -> (known after apply)
+            # (1 unchanged attribute hidden)
+        }
+
+      ~ mutual_authentication (known after apply)
+    }
+
+  # aws_lb_target_group.backend must be replaced
+-/+ resource "aws_lb_target_group" "backend" {
+      ~ arn                                = "arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c" -> (known after apply)
+      ~ arn_suffix                         = "targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c" -> (known after apply)
+      + connection_termination             = (known after apply)
+      ~ id                                 = "arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c" -> (known after apply)
+      ~ ip_address_type                    = "ipv4" -> (known after apply)
+      ~ load_balancer_arns                 = [
+          - "arn:aws:elasticloadbalancing:us-east-1:151063323597:loadbalancer/app/auy1103-dev-alb-be/e5ba31fccf291723",
+        ] -> (known after apply)
+      ~ load_balancing_algorithm_type      = "round_robin" -> (known after apply)
+      ~ load_balancing_anomaly_mitigation  = "off" -> (known after apply)
+      ~ load_balancing_cross_zone_enabled  = "use_load_balancer_configuration" -> (known after apply)
+      ~ name                               = "auy1103-dev-tg-be" -> "auy1103-prod-tg-be" # forces replacement
+      + name_prefix                        = (known after apply)
+      + preserve_client_ip                 = (known after apply)
+      ~ protocol_version                   = "HTTP1" -> (known after apply)
+      ~ tags                               = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+      ~ tags_all                           = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            # (4 unchanged elements hidden)
+        }
+      - target_control_port                = 0 -> null
+      ~ vpc_id                             = "vpc-0a2f39df8dded86ed" -> (known after apply) # forces replacement
+        # (8 unchanged attributes hidden)
+
+      ~ health_check {
+          ~ timeout             = 5 -> (known after apply)
+            # (8 unchanged attributes hidden)
+        }
+
+      ~ stickiness (known after apply)
+      - stickiness {
+          - cookie_duration = 86400 -> null
+          - enabled         = false -> null
+          - type            = "lb_cookie" -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      ~ target_failover (known after apply)
+      - target_failover {}
+
+      ~ target_group_health (known after apply)
+      - target_group_health {
+          - dns_failover {
+              - minimum_healthy_targets_count      = "1" -> null
+              - minimum_healthy_targets_percentage = "off" -> null
+            }
+          - unhealthy_state_routing {
+              - minimum_healthy_targets_count      = 1 -> null
+              - minimum_healthy_targets_percentage = "off" -> null
+            }
+        }
+
+      ~ target_health_state (known after apply)
+      - target_health_state {}
+    }
+
+  # aws_lb_target_group.web must be replaced
+-/+ resource "aws_lb_target_group" "web" {
+      ~ arn                                = "arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-web/5de3b1ab99895a6a" -> (known after apply)
+      ~ arn_suffix                         = "targetgroup/auy1103-dev-tg-web/5de3b1ab99895a6a" -> (known after apply)
+      + connection_termination             = (known after apply)
+      ~ id                                 = "arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-web/5de3b1ab99895a6a" -> (known after apply)
+      ~ ip_address_type                    = "ipv4" -> (known after apply)
+      ~ load_balancer_arns                 = [
+          - "arn:aws:elasticloadbalancing:us-east-1:151063323597:loadbalancer/app/auy1103-dev-alb-web/6d4c3c2b28f335b3",
+        ] -> (known after apply)
+      ~ load_balancing_algorithm_type      = "round_robin" -> (known after apply)
+      ~ load_balancing_anomaly_mitigation  = "off" -> (known after apply)
+      ~ load_balancing_cross_zone_enabled  = "use_load_balancer_configuration" -> (known after apply)
+      ~ name                               = "auy1103-dev-tg-web" -> "auy1103-prod-tg-web" # forces replacement
+      + name_prefix                        = (known after apply)
+      + preserve_client_ip                 = (known after apply)
+      ~ protocol_version                   = "HTTP1" -> (known after apply)
+      ~ tags                               = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+      ~ tags_all                           = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            # (4 unchanged elements hidden)
+        }
+      - target_control_port                = 0 -> null
+      ~ vpc_id                             = "vpc-0a2f39df8dded86ed" -> (known after apply) # forces replacement
+        # (8 unchanged attributes hidden)
+
+      ~ health_check {
+          ~ timeout             = 5 -> (known after apply)
+            # (8 unchanged attributes hidden)
+        }
+
+      ~ stickiness (known after apply)
+      - stickiness {
+          - cookie_duration = 86400 -> null
+          - enabled         = false -> null
+          - type            = "lb_cookie" -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      ~ target_failover (known after apply)
+      - target_failover {}
+
+      ~ target_group_health (known after apply)
+      - target_group_health {
+          - dns_failover {
+              - minimum_healthy_targets_count      = "1" -> null
+              - minimum_healthy_targets_percentage = "off" -> null
+            }
+          - unhealthy_state_routing {
+              - minimum_healthy_targets_count      = 1 -> null
+              - minimum_healthy_targets_percentage = "off" -> null
+            }
+        }
+
+      ~ target_health_state (known after apply)
+      - target_health_state {}
+    }
+
+  # aws_lb_target_group_attachment.backend["backend-01"] must be replaced
+-/+ resource "aws_lb_target_group_attachment" "backend" {
+      ~ id               = "arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c,i-0e3327af281492a79,80" -> (known after apply)
+      ~ target_group_arn = "arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c" -> (known after apply) # forces replacement
+      ~ target_id        = "i-0e3327af281492a79" -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # aws_lb_target_group_attachment.backend["backend-02"] must be replaced
+-/+ resource "aws_lb_target_group_attachment" "backend" {
+      ~ id               = "arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c,i-0b5873b01b7a49704,80" -> (known after apply)
+      ~ target_group_arn = "arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c" -> (known after apply) # forces replacement
+      ~ target_id        = "i-0b5873b01b7a49704" -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # aws_lb_target_group_attachment.backend["backend-03"] must be replaced
+-/+ resource "aws_lb_target_group_attachment" "backend" {
+      ~ id               = "arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c,i-0ca301b0aa7a9f162,80" -> (known after apply)
+      ~ target_group_arn = "arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c" -> (known after apply) # forces replacement
+      ~ target_id        = "i-0ca301b0aa7a9f162" -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # aws_lb_target_group_attachment.backend["backend-04"] will be created
+  + resource "aws_lb_target_group_attachment" "backend" {
+      + id               = (known after apply)
+      + port             = 80
+      + region           = "us-east-1"
+      + target_group_arn = (known after apply)
+      + target_id        = (known after apply)
+    }
+
+  # aws_lb_target_group_attachment.web must be replaced
+-/+ resource "aws_lb_target_group_attachment" "web" {
+      ~ id               = "arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-web/5de3b1ab99895a6a,i-02c503b10a4bc707a,80" -> (known after apply)
+      ~ target_group_arn = "arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-web/5de3b1ab99895a6a" -> (known after apply) # forces replacement
+      ~ target_id        = "i-02c503b10a4bc707a" -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # aws_security_group.alb["backend"] must be replaced
++/- resource "aws_security_group" "alb" {
+      ~ arn                    = "arn:aws:ec2:us-east-1:151063323597:security-group/sg-097223ad86c214fed" -> (known after apply)
+      ~ id                     = "sg-097223ad86c214fed" -> (known after apply)
+      ~ name                   = "auy1103-dev-alb-backend-9890100980e0e85c130575bfb8" -> (known after apply)
+      ~ name_prefix            = "auy1103-dev-alb-backend-" -> "auy1103-prod-alb-backend-" # forces replacement
+      ~ owner_id               = "151063323597" -> (known after apply)
+      ~ tags                   = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-alb-backend-sg" -> "auy1103-prod-alb-backend-sg"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+      ~ tags_all               = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-alb-backend-sg" -> "auy1103-prod-alb-backend-sg"
+            # (4 unchanged elements hidden)
+        }
+      ~ vpc_id                 = "vpc-0a2f39df8dded86ed" -> (known after apply) # forces replacement
+        # (5 unchanged attributes hidden)
+    }
+
+  # aws_security_group.alb["web"] must be replaced
++/- resource "aws_security_group" "alb" {
+      ~ arn                    = "arn:aws:ec2:us-east-1:151063323597:security-group/sg-0dbf500bfa10e72ea" -> (known after apply)
+      ~ id                     = "sg-0dbf500bfa10e72ea" -> (known after apply)
+      ~ name                   = "auy1103-dev-alb-web-973072a5637029da069b3cc112" -> (known after apply)
+      ~ name_prefix            = "auy1103-dev-alb-web-" -> "auy1103-prod-alb-web-" # forces replacement
+      ~ owner_id               = "151063323597" -> (known after apply)
+      ~ tags                   = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-alb-web-sg" -> "auy1103-prod-alb-web-sg"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+      ~ tags_all               = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-alb-web-sg" -> "auy1103-prod-alb-web-sg"
+            # (4 unchanged elements hidden)
+        }
+      ~ vpc_id                 = "vpc-0a2f39df8dded86ed" -> (known after apply) # forces replacement
+        # (5 unchanged attributes hidden)
+    }
+
+  # aws_security_group.rds must be replaced
++/- resource "aws_security_group" "rds" {
+      ~ arn                    = "arn:aws:ec2:us-east-1:151063323597:security-group/sg-05910bcf7770917dd" -> (known after apply)
+      ~ id                     = "sg-05910bcf7770917dd" -> (known after apply)
+      ~ ingress                = [
+          - {
+              - cidr_blocks      = []
+              - description      = "MySQL desde SG de backends"
+              - from_port        = 3306
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = [
+                  - "sg-055bdb810e6ea90e0",
+                  - "sg-0608510b68f16f76d",
+                  - "sg-0926d9ff7a4380143",
+                ]
+              - self             = false
+              - to_port          = 3306
+            },
+          + {
+              + cidr_blocks      = []
+              + description      = "MySQL desde SG de backends"
+              + from_port        = 3306
+              + ipv6_cidr_blocks = []
+              + prefix_list_ids  = []
+              + protocol         = "tcp"
+              + security_groups  = (known after apply)
+              + self             = false
+              + to_port          = 3306
+            },
+            # (1 unchanged element hidden)
+        ]
+      ~ name                   = "auy1103-dev-rds-a7127a881647aaad7e03b3e455" -> (known after apply)
+      ~ name_prefix            = "auy1103-dev-rds-" -> "auy1103-prod-rds-" # forces replacement
+      ~ owner_id               = "151063323597" -> (known after apply)
+      ~ tags                   = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-rds-sg" -> "auy1103-prod-rds-sg"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+      ~ tags_all               = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-rds-sg" -> "auy1103-prod-rds-sg"
+            # (4 unchanged elements hidden)
+        }
+      ~ vpc_id                 = "vpc-0a2f39df8dded86ed" -> (known after apply) # forces replacement
+        # (4 unchanged attributes hidden)
+    }
+
+  # module.backend["backend-01"].aws_instance.this must be replaced
++/- resource "aws_instance" "this" {
+      ~ arn                                  = "arn:aws:ec2:us-east-1:151063323597:instance/i-0e3327af281492a79" -> (known after apply)
+      ~ availability_zone                    = "us-east-1a" -> (known after apply)
+      ~ disable_api_stop                     = false -> (known after apply)
+      ~ disable_api_termination              = false -> (known after apply)
+      ~ ebs_optimized                        = false -> (known after apply)
+      + enable_primary_ipv6                  = (known after apply)
+      - hibernation                          = false -> null
+      + host_id                              = (known after apply)
+      + host_resource_group_arn              = (known after apply)
+      + iam_instance_profile                 = (known after apply)
+      ~ id                                   = "i-0e3327af281492a79" -> (known after apply)
+      ~ instance_initiated_shutdown_behavior = "stop" -> (known after apply)
+      + instance_lifecycle                   = (known after apply)
+      ~ instance_state                       = "running" -> (known after apply)
+      ~ instance_type                        = "t3.micro" -> "t3.small"
+      ~ ipv6_address_count                   = 0 -> (known after apply)
+      ~ ipv6_addresses                       = [] -> (known after apply)
+      + key_name                             = (known after apply)
+      ~ monitoring                           = false -> (known after apply)
+      + outpost_arn                          = (known after apply)
+      + password_data                        = (known after apply)
+      + placement_group                      = (known after apply)
+      + placement_group_id                   = (known after apply)
+      ~ placement_partition_number           = 0 -> (known after apply)
+      ~ primary_network_interface_id         = "eni-06d3e8ae6e263b1ee" -> (known after apply)
+      ~ private_dns                          = "ip-10-10-10-12.ec2.internal" -> (known after apply)
+      ~ private_ip                           = "10.10.10.12" -> (known after apply)
+      + public_dns                           = (known after apply)
+      + public_ip                            = (known after apply)
+      ~ secondary_private_ips                = [] -> (known after apply)
+      ~ security_groups                      = [] -> (known after apply)
+      + spot_instance_request_id             = (known after apply)
+      ~ subnet_id                            = "subnet-01dbc12d28bde32c0" -> (known after apply) # forces replacement
+      ~ tags                                 = {
+            "Asignatura"  = "AUY1103"
+            "Backend"     = "backend-01"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-backend-01" -> "auy1103-prod-backend-01"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+            "Rol"         = "backend"
+        }
+      ~ tags_all                             = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-backend-01" -> "auy1103-prod-backend-01"
+            # (6 unchanged elements hidden)
+        }
+      ~ tenancy                              = "default" -> (known after apply)
+      + user_data_base64                     = (known after apply)
+      ~ vpc_security_group_ids               = [
+          - "sg-055bdb810e6ea90e0",
+        ] -> (known after apply)
+        # (8 unchanged attributes hidden)
+
+      ~ capacity_reservation_specification (known after apply)
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = "open" -> null
+        }
+
+      ~ cpu_options (known after apply)
+      - cpu_options {
+          - core_count            = 1 -> null
+          - threads_per_core      = 2 -> null
+            # (2 unchanged attributes hidden)
+        }
+
+      - credit_specification {
+          - cpu_credits = "unlimited" -> null
+        }
+
+      ~ ebs_block_device (known after apply)
+
+      ~ enclave_options (known after apply)
+      - enclave_options {
+          - enabled = false -> null
+        }
+
+      ~ ephemeral_block_device (known after apply)
+
+      ~ instance_market_options (known after apply)
+
+      ~ maintenance_options (known after apply)
+      - maintenance_options {
+          - auto_recovery = "default" -> null
+        }
+
+      ~ metadata_options {
+          ~ http_put_response_hop_limit = 2 -> (known after apply)
+          ~ instance_metadata_tags      = "disabled" -> (known after apply)
+            # (3 unchanged attributes hidden)
+        }
+
+      ~ network_interface (known after apply)
+
+      ~ primary_network_interface (known after apply)
+      - primary_network_interface {
+          - delete_on_termination = true -> null
+          - network_interface_id  = "eni-06d3e8ae6e263b1ee" -> null
+        }
+
+      ~ private_dns_name_options (known after apply)
+      - private_dns_name_options {
+          - enable_resource_name_dns_a_record    = false -> null
+          - enable_resource_name_dns_aaaa_record = false -> null
+          - hostname_type                        = "ip-name" -> null
+        }
+
+      ~ root_block_device {
+          ~ device_name           = "/dev/sda1" -> (known after apply)
+          ~ iops                  = 3000 -> (known after apply)
+          ~ kms_key_id            = "arn:aws:kms:us-east-1:151063323597:key/5b542639-f904-4c33-9f70-49a7e726f75d" -> (known after apply)
+          - tags                  = {
+              - "CostCenter"  = "academico-dev"
+              - "Environment" = "dev"
+            } -> null
+          ~ tags_all              = {
+              - "Asignatura"  = "AUY1103"
+              - "CostCenter"  = "academico-dev"
+              - "Environment" = "dev"
+              - "ManagedBy"   = "Terraform"
+              - "Owner"       = "fer.galdamez@duocuc.cl"
+              - "Project"     = "auy1103"
+            } -> (known after apply)
+          ~ throughput            = 125 -> (known after apply)
+          ~ volume_id             = "vol-0fd94abe8e2eeffb4" -> (known after apply)
+            # (4 unchanged attributes hidden)
+        }
+
+      ~ secondary_network_interface (known after apply)
+    }
+
+  # module.backend["backend-01"].aws_security_group.this must be replaced
++/- resource "aws_security_group" "this" {
+      ~ arn                    = "arn:aws:ec2:us-east-1:151063323597:security-group/sg-055bdb810e6ea90e0" -> (known after apply)
+      ~ description            = "SG de auy1103-dev-backend-01" -> "SG de auy1103-prod-backend-01" # forces replacement
+      ~ id                     = "sg-055bdb810e6ea90e0" -> (known after apply)
+      ~ ingress                = [
+          - {
+              - cidr_blocks      = []
+              - description      = "HTTP solo desde ALB backends"
+              - from_port        = 80
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = [
+                  - "sg-097223ad86c214fed",
+                ]
+              - self             = false
+              - to_port          = 80
+            },
+          + {
+              + cidr_blocks      = []
+              + description      = "HTTP solo desde ALB backends"
+              + from_port        = 80
+              + ipv6_cidr_blocks = []
+              + prefix_list_ids  = []
+              + protocol         = "tcp"
+              + security_groups  = (known after apply)
+              + self             = false
+              + to_port          = 80
+            },
+        ]
+      ~ name                   = "auy1103-dev-backend-01-sg-93e560245c86a851cb92e91f8f" -> (known after apply)
+      ~ name_prefix            = "auy1103-dev-backend-01-sg-" -> "auy1103-prod-backend-01-sg-" # forces replacement
+      ~ owner_id               = "151063323597" -> (known after apply)
+      ~ tags                   = {
+            "Asignatura"  = "AUY1103"
+            "Backend"     = "backend-01"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-backend-01-sg" -> "auy1103-prod-backend-01-sg"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+            "Rol"         = "backend"
+        }
+      ~ tags_all               = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-backend-01-sg" -> "auy1103-prod-backend-01-sg"
+            # (6 unchanged elements hidden)
+        }
+      ~ vpc_id                 = "vpc-0a2f39df8dded86ed" -> (known after apply) # forces replacement
+        # (3 unchanged attributes hidden)
+    }
+
+  # module.backend["backend-02"].aws_instance.this must be replaced
++/- resource "aws_instance" "this" {
+      ~ arn                                  = "arn:aws:ec2:us-east-1:151063323597:instance/i-0b5873b01b7a49704" -> (known after apply)
+      ~ availability_zone                    = "us-east-1b" -> (known after apply)
+      ~ disable_api_stop                     = false -> (known after apply)
+      ~ disable_api_termination              = false -> (known after apply)
+      ~ ebs_optimized                        = false -> (known after apply)
+      + enable_primary_ipv6                  = (known after apply)
+      - hibernation                          = false -> null
+      + host_id                              = (known after apply)
+      + host_resource_group_arn              = (known after apply)
+      + iam_instance_profile                 = (known after apply)
+      ~ id                                   = "i-0b5873b01b7a49704" -> (known after apply)
+      ~ instance_initiated_shutdown_behavior = "stop" -> (known after apply)
+      + instance_lifecycle                   = (known after apply)
+      ~ instance_state                       = "running" -> (known after apply)
+      ~ instance_type                        = "t3.micro" -> "t3.small"
+      ~ ipv6_address_count                   = 0 -> (known after apply)
+      ~ ipv6_addresses                       = [] -> (known after apply)
+      + key_name                             = (known after apply)
+      ~ monitoring                           = false -> (known after apply)
+      + outpost_arn                          = (known after apply)
+      + password_data                        = (known after apply)
+      + placement_group                      = (known after apply)
+      + placement_group_id                   = (known after apply)
+      ~ placement_partition_number           = 0 -> (known after apply)
+      ~ primary_network_interface_id         = "eni-056d8994fb266e5b4" -> (known after apply)
+      ~ private_dns                          = "ip-10-10-11-155.ec2.internal" -> (known after apply)
+      ~ private_ip                           = "10.10.11.155" -> (known after apply)
+      + public_dns                           = (known after apply)
+      + public_ip                            = (known after apply)
+      ~ secondary_private_ips                = [] -> (known after apply)
+      ~ security_groups                      = [] -> (known after apply)
+      + spot_instance_request_id             = (known after apply)
+      ~ subnet_id                            = "subnet-003f13b87cb2ba307" -> (known after apply) # forces replacement
+      ~ tags                                 = {
+            "Asignatura"  = "AUY1103"
+            "Backend"     = "backend-02"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-backend-02" -> "auy1103-prod-backend-02"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+            "Rol"         = "backend"
+        }
+      ~ tags_all                             = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-backend-02" -> "auy1103-prod-backend-02"
+            # (6 unchanged elements hidden)
+        }
+      ~ tenancy                              = "default" -> (known after apply)
+      + user_data_base64                     = (known after apply)
+      ~ vpc_security_group_ids               = [
+          - "sg-0926d9ff7a4380143",
+        ] -> (known after apply)
+        # (8 unchanged attributes hidden)
+
+      ~ capacity_reservation_specification (known after apply)
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = "open" -> null
+        }
+
+      ~ cpu_options (known after apply)
+      - cpu_options {
+          - core_count            = 1 -> null
+          - threads_per_core      = 2 -> null
+            # (2 unchanged attributes hidden)
+        }
+
+      - credit_specification {
+          - cpu_credits = "unlimited" -> null
+        }
+
+      ~ ebs_block_device (known after apply)
+
+      ~ enclave_options (known after apply)
+      - enclave_options {
+          - enabled = false -> null
+        }
+
+      ~ ephemeral_block_device (known after apply)
+
+      ~ instance_market_options (known after apply)
+
+      ~ maintenance_options (known after apply)
+      - maintenance_options {
+          - auto_recovery = "default" -> null
+        }
+
+      ~ metadata_options {
+          ~ http_put_response_hop_limit = 2 -> (known after apply)
+          ~ instance_metadata_tags      = "disabled" -> (known after apply)
+            # (3 unchanged attributes hidden)
+        }
+
+      ~ network_interface (known after apply)
+
+      ~ primary_network_interface (known after apply)
+      - primary_network_interface {
+          - delete_on_termination = true -> null
+          - network_interface_id  = "eni-056d8994fb266e5b4" -> null
+        }
+
+      ~ private_dns_name_options (known after apply)
+      - private_dns_name_options {
+          - enable_resource_name_dns_a_record    = false -> null
+          - enable_resource_name_dns_aaaa_record = false -> null
+          - hostname_type                        = "ip-name" -> null
+        }
+
+      ~ root_block_device {
+          ~ device_name           = "/dev/sda1" -> (known after apply)
+          ~ iops                  = 3000 -> (known after apply)
+          ~ kms_key_id            = "arn:aws:kms:us-east-1:151063323597:key/5b542639-f904-4c33-9f70-49a7e726f75d" -> (known after apply)
+          - tags                  = {
+              - "CostCenter"  = "academico-dev"
+              - "Environment" = "dev"
+            } -> null
+          ~ tags_all              = {
+              - "Asignatura"  = "AUY1103"
+              - "CostCenter"  = "academico-dev"
+              - "Environment" = "dev"
+              - "ManagedBy"   = "Terraform"
+              - "Owner"       = "fer.galdamez@duocuc.cl"
+              - "Project"     = "auy1103"
+            } -> (known after apply)
+          ~ throughput            = 125 -> (known after apply)
+          ~ volume_id             = "vol-0f3bb7184d680d10f" -> (known after apply)
+            # (4 unchanged attributes hidden)
+        }
+
+      ~ secondary_network_interface (known after apply)
+    }
+
+  # module.backend["backend-02"].aws_security_group.this must be replaced
++/- resource "aws_security_group" "this" {
+      ~ arn                    = "arn:aws:ec2:us-east-1:151063323597:security-group/sg-0926d9ff7a4380143" -> (known after apply)
+      ~ description            = "SG de auy1103-dev-backend-02" -> "SG de auy1103-prod-backend-02" # forces replacement
+      ~ id                     = "sg-0926d9ff7a4380143" -> (known after apply)
+      ~ ingress                = [
+          - {
+              - cidr_blocks      = []
+              - description      = "HTTP solo desde ALB backends"
+              - from_port        = 80
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = [
+                  - "sg-097223ad86c214fed",
+                ]
+              - self             = false
+              - to_port          = 80
+            },
+          + {
+              + cidr_blocks      = []
+              + description      = "HTTP solo desde ALB backends"
+              + from_port        = 80
+              + ipv6_cidr_blocks = []
+              + prefix_list_ids  = []
+              + protocol         = "tcp"
+              + security_groups  = (known after apply)
+              + self             = false
+              + to_port          = 80
+            },
+        ]
+      ~ name                   = "auy1103-dev-backend-02-sg-8a785da1c78718b7dc0debd047" -> (known after apply)
+      ~ name_prefix            = "auy1103-dev-backend-02-sg-" -> "auy1103-prod-backend-02-sg-" # forces replacement
+      ~ owner_id               = "151063323597" -> (known after apply)
+      ~ tags                   = {
+            "Asignatura"  = "AUY1103"
+            "Backend"     = "backend-02"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-backend-02-sg" -> "auy1103-prod-backend-02-sg"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+            "Rol"         = "backend"
+        }
+      ~ tags_all               = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-backend-02-sg" -> "auy1103-prod-backend-02-sg"
+            # (6 unchanged elements hidden)
+        }
+      ~ vpc_id                 = "vpc-0a2f39df8dded86ed" -> (known after apply) # forces replacement
+        # (3 unchanged attributes hidden)
+    }
+
+  # module.backend["backend-03"].aws_instance.this must be replaced
++/- resource "aws_instance" "this" {
+      ~ arn                                  = "arn:aws:ec2:us-east-1:151063323597:instance/i-0ca301b0aa7a9f162" -> (known after apply)
+      ~ availability_zone                    = "us-east-1a" -> (known after apply)
+      ~ disable_api_stop                     = false -> (known after apply)
+      ~ disable_api_termination              = false -> (known after apply)
+      ~ ebs_optimized                        = false -> (known after apply)
+      + enable_primary_ipv6                  = (known after apply)
+      - hibernation                          = false -> null
+      + host_id                              = (known after apply)
+      + host_resource_group_arn              = (known after apply)
+      + iam_instance_profile                 = (known after apply)
+      ~ id                                   = "i-0ca301b0aa7a9f162" -> (known after apply)
+      ~ instance_initiated_shutdown_behavior = "stop" -> (known after apply)
+      + instance_lifecycle                   = (known after apply)
+      ~ instance_state                       = "running" -> (known after apply)
+      ~ instance_type                        = "t3.micro" -> "t3.small"
+      ~ ipv6_address_count                   = 0 -> (known after apply)
+      ~ ipv6_addresses                       = [] -> (known after apply)
+      + key_name                             = (known after apply)
+      ~ monitoring                           = false -> (known after apply)
+      + outpost_arn                          = (known after apply)
+      + password_data                        = (known after apply)
+      + placement_group                      = (known after apply)
+      + placement_group_id                   = (known after apply)
+      ~ placement_partition_number           = 0 -> (known after apply)
+      ~ primary_network_interface_id         = "eni-0ce34040ef5de54ef" -> (known after apply)
+      ~ private_dns                          = "ip-10-10-10-164.ec2.internal" -> (known after apply)
+      ~ private_ip                           = "10.10.10.164" -> (known after apply)
+      + public_dns                           = (known after apply)
+      + public_ip                            = (known after apply)
+      ~ secondary_private_ips                = [] -> (known after apply)
+      ~ security_groups                      = [] -> (known after apply)
+      + spot_instance_request_id             = (known after apply)
+      ~ subnet_id                            = "subnet-01dbc12d28bde32c0" -> (known after apply) # forces replacement
+      ~ tags                                 = {
+            "Asignatura"  = "AUY1103"
+            "Backend"     = "backend-03"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-backend-03" -> "auy1103-prod-backend-03"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+            "Rol"         = "backend"
+        }
+      ~ tags_all                             = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-backend-03" -> "auy1103-prod-backend-03"
+            # (6 unchanged elements hidden)
+        }
+      ~ tenancy                              = "default" -> (known after apply)
+      + user_data_base64                     = (known after apply)
+      ~ vpc_security_group_ids               = [
+          - "sg-0608510b68f16f76d",
+        ] -> (known after apply)
+        # (8 unchanged attributes hidden)
+
+      ~ capacity_reservation_specification (known after apply)
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = "open" -> null
+        }
+
+      ~ cpu_options (known after apply)
+      - cpu_options {
+          - core_count            = 1 -> null
+          - threads_per_core      = 2 -> null
+            # (2 unchanged attributes hidden)
+        }
+
+      - credit_specification {
+          - cpu_credits = "unlimited" -> null
+        }
+
+      ~ ebs_block_device (known after apply)
+
+      ~ enclave_options (known after apply)
+      - enclave_options {
+          - enabled = false -> null
+        }
+
+      ~ ephemeral_block_device (known after apply)
+
+      ~ instance_market_options (known after apply)
+
+      ~ maintenance_options (known after apply)
+      - maintenance_options {
+          - auto_recovery = "default" -> null
+        }
+
+      ~ metadata_options {
+          ~ http_put_response_hop_limit = 2 -> (known after apply)
+          ~ instance_metadata_tags      = "disabled" -> (known after apply)
+            # (3 unchanged attributes hidden)
+        }
+
+      ~ network_interface (known after apply)
+
+      ~ primary_network_interface (known after apply)
+      - primary_network_interface {
+          - delete_on_termination = true -> null
+          - network_interface_id  = "eni-0ce34040ef5de54ef" -> null
+        }
+
+      ~ private_dns_name_options (known after apply)
+      - private_dns_name_options {
+          - enable_resource_name_dns_a_record    = false -> null
+          - enable_resource_name_dns_aaaa_record = false -> null
+          - hostname_type                        = "ip-name" -> null
+        }
+
+      ~ root_block_device {
+          ~ device_name           = "/dev/sda1" -> (known after apply)
+          ~ iops                  = 3000 -> (known after apply)
+          ~ kms_key_id            = "arn:aws:kms:us-east-1:151063323597:key/5b542639-f904-4c33-9f70-49a7e726f75d" -> (known after apply)
+          - tags                  = {
+              - "CostCenter"  = "academico-dev"
+              - "Environment" = "dev"
+            } -> null
+          ~ tags_all              = {
+              - "Asignatura"  = "AUY1103"
+              - "CostCenter"  = "academico-dev"
+              - "Environment" = "dev"
+              - "ManagedBy"   = "Terraform"
+              - "Owner"       = "fer.galdamez@duocuc.cl"
+              - "Project"     = "auy1103"
+            } -> (known after apply)
+          ~ throughput            = 125 -> (known after apply)
+          ~ volume_id             = "vol-0ea92f8c6f862c33e" -> (known after apply)
+            # (4 unchanged attributes hidden)
+        }
+
+      ~ secondary_network_interface (known after apply)
+    }
+
+  # module.backend["backend-03"].aws_security_group.this must be replaced
++/- resource "aws_security_group" "this" {
+      ~ arn                    = "arn:aws:ec2:us-east-1:151063323597:security-group/sg-0608510b68f16f76d" -> (known after apply)
+      ~ description            = "SG de auy1103-dev-backend-03" -> "SG de auy1103-prod-backend-03" # forces replacement
+      ~ id                     = "sg-0608510b68f16f76d" -> (known after apply)
+      ~ ingress                = [
+          - {
+              - cidr_blocks      = []
+              - description      = "HTTP solo desde ALB backends"
+              - from_port        = 80
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = [
+                  - "sg-097223ad86c214fed",
+                ]
+              - self             = false
+              - to_port          = 80
+            },
+          + {
+              + cidr_blocks      = []
+              + description      = "HTTP solo desde ALB backends"
+              + from_port        = 80
+              + ipv6_cidr_blocks = []
+              + prefix_list_ids  = []
+              + protocol         = "tcp"
+              + security_groups  = (known after apply)
+              + self             = false
+              + to_port          = 80
+            },
+        ]
+      ~ name                   = "auy1103-dev-backend-03-sg-931256bf6ef34945b5114bb292" -> (known after apply)
+      ~ name_prefix            = "auy1103-dev-backend-03-sg-" -> "auy1103-prod-backend-03-sg-" # forces replacement
+      ~ owner_id               = "151063323597" -> (known after apply)
+      ~ tags                   = {
+            "Asignatura"  = "AUY1103"
+            "Backend"     = "backend-03"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-backend-03-sg" -> "auy1103-prod-backend-03-sg"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+            "Rol"         = "backend"
+        }
+      ~ tags_all               = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-backend-03-sg" -> "auy1103-prod-backend-03-sg"
+            # (6 unchanged elements hidden)
+        }
+      ~ vpc_id                 = "vpc-0a2f39df8dded86ed" -> (known after apply) # forces replacement
+        # (3 unchanged attributes hidden)
+    }
+
+  # module.backend["backend-04"].aws_instance.this will be created
+  + resource "aws_instance" "this" {
+      + ami                                  = "ami-02a9cdd4e98bc3c78"
+      + arn                                  = (known after apply)
+      + associate_public_ip_address          = false
+      + availability_zone                    = (known after apply)
+      + disable_api_stop                     = (known after apply)
+      + disable_api_termination              = (known after apply)
+      + ebs_optimized                        = (known after apply)
+      + enable_primary_ipv6                  = (known after apply)
+      + force_destroy                        = false
+      + get_password_data                    = false
+      + host_id                              = (known after apply)
+      + host_resource_group_arn              = (known after apply)
+      + iam_instance_profile                 = (known after apply)
+      + id                                   = (known after apply)
+      + instance_initiated_shutdown_behavior = (known after apply)
+      + instance_lifecycle                   = (known after apply)
+      + instance_state                       = (known after apply)
+      + instance_type                        = "t3.small"
+      + ipv6_address_count                   = (known after apply)
+      + ipv6_addresses                       = (known after apply)
+      + key_name                             = (known after apply)
+      + monitoring                           = (known after apply)
+      + outpost_arn                          = (known after apply)
+      + password_data                        = (known after apply)
+      + placement_group                      = (known after apply)
+      + placement_group_id                   = (known after apply)
+      + placement_partition_number           = (known after apply)
+      + primary_network_interface_id         = (known after apply)
+      + private_dns                          = (known after apply)
+      + private_ip                           = (known after apply)
+      + public_dns                           = (known after apply)
+      + public_ip                            = (known after apply)
+      + region                               = "us-east-1"
+      + secondary_private_ips                = (known after apply)
+      + security_groups                      = (known after apply)
+      + source_dest_check                    = true
+      + spot_instance_request_id             = (known after apply)
+      + subnet_id                            = (known after apply)
+      + tags                                 = {
+          + "Asignatura"  = "AUY1103"
+          + "Backend"     = "backend-04"
+          + "CostCenter"  = "academico-prod"
+          + "Environment" = "prod"
+          + "ManagedBy"   = "Terraform"
+          + "Name"        = "auy1103-prod-backend-04"
+          + "Owner"       = "fer.galdamez@duocuc.cl"
+          + "Project"     = "auy1103"
+          + "Rol"         = "backend"
+        }
+      + tags_all                             = {
+          + "Asignatura"  = "AUY1103"
+          + "Backend"     = "backend-04"
+          + "CostCenter"  = "academico-prod"
+          + "Environment" = "prod"
+          + "ManagedBy"   = "Terraform"
+          + "Name"        = "auy1103-prod-backend-04"
+          + "Owner"       = "fer.galdamez@duocuc.cl"
+          + "Project"     = "auy1103"
+          + "Rol"         = "backend"
+        }
+      + tenancy                              = (known after apply)
+      + user_data                            = <<-EOT
+            #!/bin/bash
+            set -euxo pipefail
+            export DEBIAN_FRONTEND=noninteractive
+            
+            for i in {1..30}; do
+              if curl -s -m 2 https://archive.ubuntu.com > /dev/null 2>&1; then break; fi
+              sleep 3
+            done
+            
+            for i in {1..5}; do
+              apt-get update -y && apt-get install -y docker.io && break || sleep 5
+            done
+            systemctl enable --now docker
+            
+            docker run -d \
+              --name web-backend-04 \
+              --hostname web-backend-04 \
+              --restart unless-stopped \
+              -p 80:80 \
+              nginxdemos/hello:latest
+        EOT
+      + user_data_base64                     = (known after apply)
+      + user_data_replace_on_change          = true
+      + vpc_security_group_ids               = (known after apply)
+
+      + capacity_reservation_specification (known after apply)
+
+      + cpu_options (known after apply)
+
+      + ebs_block_device (known after apply)
+
+      + enclave_options (known after apply)
+
+      + ephemeral_block_device (known after apply)
+
+      + instance_market_options (known after apply)
+
+      + maintenance_options (known after apply)
+
+      + metadata_options {
+          + http_endpoint               = "enabled"
+          + http_protocol_ipv6          = "disabled"
+          + http_put_response_hop_limit = (known after apply)
+          + http_tokens                 = "required"
+          + instance_metadata_tags      = (known after apply)
+        }
+
+      + network_interface (known after apply)
+
+      + primary_network_interface (known after apply)
+
+      + private_dns_name_options (known after apply)
+
+      + root_block_device {
+          + delete_on_termination = true
+          + device_name           = (known after apply)
+          + encrypted             = true
+          + iops                  = (known after apply)
+          + kms_key_id            = (known after apply)
+          + tags_all              = (known after apply)
+          + throughput            = (known after apply)
+          + volume_id             = (known after apply)
+          + volume_size           = 10
+          + volume_type           = "gp3"
+        }
+
+      + secondary_network_interface (known after apply)
+    }
+
+  # module.backend["backend-04"].aws_security_group.this will be created
+  + resource "aws_security_group" "this" {
+      + arn                    = (known after apply)
+      + description            = "SG de auy1103-prod-backend-04"
+      + egress                 = [
+          + {
+              + cidr_blocks      = [
+                  + "0.0.0.0/0",
+                ]
+              + description      = "Salida total via NAT"
+              + from_port        = 0
+              + ipv6_cidr_blocks = []
+              + prefix_list_ids  = []
+              + protocol         = "-1"
+              + security_groups  = []
+              + self             = false
+              + to_port          = 0
+            },
+        ]
+      + id                     = (known after apply)
+      + ingress                = [
+          + {
+              + cidr_blocks      = []
+              + description      = "HTTP solo desde ALB backends"
+              + from_port        = 80
+              + ipv6_cidr_blocks = []
+              + prefix_list_ids  = []
+              + protocol         = "tcp"
+              + security_groups  = (known after apply)
+              + self             = false
+              + to_port          = 80
+            },
+        ]
+      + name                   = (known after apply)
+      + name_prefix            = "auy1103-prod-backend-04-sg-"
+      + owner_id               = (known after apply)
+      + region                 = "us-east-1"
+      + revoke_rules_on_delete = false
+      + tags                   = {
+          + "Asignatura"  = "AUY1103"
+          + "Backend"     = "backend-04"
+          + "CostCenter"  = "academico-prod"
+          + "Environment" = "prod"
+          + "ManagedBy"   = "Terraform"
+          + "Name"        = "auy1103-prod-backend-04-sg"
+          + "Owner"       = "fer.galdamez@duocuc.cl"
+          + "Project"     = "auy1103"
+          + "Rol"         = "backend"
+        }
+      + tags_all               = {
+          + "Asignatura"  = "AUY1103"
+          + "Backend"     = "backend-04"
+          + "CostCenter"  = "academico-prod"
+          + "Environment" = "prod"
+          + "ManagedBy"   = "Terraform"
+          + "Name"        = "auy1103-prod-backend-04-sg"
+          + "Owner"       = "fer.galdamez@duocuc.cl"
+          + "Project"     = "auy1103"
+          + "Rol"         = "backend"
+        }
+      + vpc_id                 = (known after apply)
+    }
+
+  # module.vpc.aws_default_network_acl.this[0] must be replaced
+-/+ resource "aws_default_network_acl" "this" {
+      ~ arn                    = "arn:aws:ec2:us-east-1:151063323597:network-acl/acl-0dd93d1ee83046719" -> (known after apply)
+      ~ default_network_acl_id = "acl-0dd93d1ee83046719" -> (known after apply) # forces replacement
+      ~ id                     = "acl-0dd93d1ee83046719" -> (known after apply)
+      ~ owner_id               = "151063323597" -> (known after apply)
+      - subnet_ids             = [
+          - "subnet-003f13b87cb2ba307",
+          - "subnet-01dbc12d28bde32c0",
+          - "subnet-0824752a27709bc0c",
+          - "subnet-0f77cfc9ed4459352",
+        ] -> null
+      ~ tags                   = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-vpc-default" -> "auy1103-prod-vpc-default"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+      ~ tags_all               = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-vpc-default" -> "auy1103-prod-vpc-default"
+            # (4 unchanged elements hidden)
+        }
+      ~ vpc_id                 = "vpc-0a2f39df8dded86ed" -> (known after apply)
+        # (1 unchanged attribute hidden)
+
+      - egress {
+          - action          = "allow" -> null
+          - from_port       = 0 -> null
+          - icmp_code       = 0 -> null
+          - icmp_type       = 0 -> null
+          - ipv6_cidr_block = "::/0" -> null
+          - protocol        = "-1" -> null
+          - rule_no         = 101 -> null
+          - to_port         = 0 -> null
+            # (1 unchanged attribute hidden)
+        }
+      - egress {
+          - action          = "allow" -> null
+          - cidr_block      = "0.0.0.0/0" -> null
+          - from_port       = 0 -> null
+          - icmp_code       = 0 -> null
+          - icmp_type       = 0 -> null
+          - protocol        = "-1" -> null
+          - rule_no         = 100 -> null
+          - to_port         = 0 -> null
+            # (1 unchanged attribute hidden)
+        }
+      + egress {
+          + action          = "allow"
+          + from_port       = 0
+          + ipv6_cidr_block = "::/0"
+          + protocol        = "-1"
+          + rule_no         = 101
+          + to_port         = 0
+            # (1 unchanged attribute hidden)
+        }
+      + egress {
+          + action          = "allow"
+          + cidr_block      = "0.0.0.0/0"
+          + from_port       = 0
+          + protocol        = "-1"
+          + rule_no         = 100
+          + to_port         = 0
+            # (1 unchanged attribute hidden)
+        }
+
+      - ingress {
+          - action          = "allow" -> null
+          - from_port       = 0 -> null
+          - icmp_code       = 0 -> null
+          - icmp_type       = 0 -> null
+          - ipv6_cidr_block = "::/0" -> null
+          - protocol        = "-1" -> null
+          - rule_no         = 101 -> null
+          - to_port         = 0 -> null
+            # (1 unchanged attribute hidden)
+        }
+      - ingress {
+          - action          = "allow" -> null
+          - cidr_block      = "0.0.0.0/0" -> null
+          - from_port       = 0 -> null
+          - icmp_code       = 0 -> null
+          - icmp_type       = 0 -> null
+          - protocol        = "-1" -> null
+          - rule_no         = 100 -> null
+          - to_port         = 0 -> null
+            # (1 unchanged attribute hidden)
+        }
+      + ingress {
+          + action          = "allow"
+          + from_port       = 0
+          + ipv6_cidr_block = "::/0"
+          + protocol        = "-1"
+          + rule_no         = 101
+          + to_port         = 0
+            # (1 unchanged attribute hidden)
+        }
+      + ingress {
+          + action          = "allow"
+          + cidr_block      = "0.0.0.0/0"
+          + from_port       = 0
+          + protocol        = "-1"
+          + rule_no         = 100
+          + to_port         = 0
+            # (1 unchanged attribute hidden)
+        }
+    }
+
+  # module.vpc.aws_default_route_table.default[0] must be replaced
+-/+ resource "aws_default_route_table" "default" {
+      ~ arn                    = "arn:aws:ec2:us-east-1:151063323597:route-table/rtb-049a2baaf914ad9ce" -> (known after apply)
+      ~ default_route_table_id = "rtb-049a2baaf914ad9ce" -> (known after apply) # forces replacement
+      ~ id                     = "rtb-049a2baaf914ad9ce" -> (known after apply)
+      ~ owner_id               = "151063323597" -> (known after apply)
+      - propagating_vgws       = [] -> null
+      ~ route                  = [] -> (known after apply)
+      ~ tags                   = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-vpc-default" -> "auy1103-prod-vpc-default"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+      ~ tags_all               = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-vpc-default" -> "auy1103-prod-vpc-default"
+            # (4 unchanged elements hidden)
+        }
+      ~ vpc_id                 = "vpc-0a2f39df8dded86ed" -> (known after apply)
+        # (1 unchanged attribute hidden)
+
+        # (1 unchanged block hidden)
+    }
+
+  # module.vpc.aws_default_security_group.this[0] must be replaced
+-/+ resource "aws_default_security_group" "this" {
+      ~ arn                    = "arn:aws:ec2:us-east-1:151063323597:security-group/sg-0074c55d486566738" -> (known after apply)
+      ~ description            = "default VPC security group" -> (known after apply)
+      ~ egress                 = [] -> (known after apply)
+      ~ id                     = "sg-0074c55d486566738" -> (known after apply)
+      ~ ingress                = [] -> (known after apply)
+      ~ name                   = "default" -> (known after apply)
+      + name_prefix            = (known after apply)
+      ~ owner_id               = "151063323597" -> (known after apply)
+      ~ tags                   = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-vpc-default" -> "auy1103-prod-vpc-default"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+      ~ tags_all               = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-vpc-default" -> "auy1103-prod-vpc-default"
+            # (4 unchanged elements hidden)
+        }
+      ~ vpc_id                 = "vpc-0a2f39df8dded86ed" -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_eip.nat[0] will be updated in-place
+  ~ resource "aws_eip" "nat" {
+        id                       = "eipalloc-0e07ec16b1fb6405d"
+      ~ tags                     = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-vpc-us-east-1a" -> "auy1103-prod-vpc-us-east-1a"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+      ~ tags_all                 = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-vpc-us-east-1a" -> "auy1103-prod-vpc-us-east-1a"
+            # (4 unchanged elements hidden)
+        }
+        # (18 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_internet_gateway.this[0] will be updated in-place
+  ~ resource "aws_internet_gateway" "this" {
+        id       = "igw-086bd3996f3da27cb"
+      ~ tags     = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-vpc" -> "auy1103-prod-vpc"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+      ~ tags_all = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-vpc" -> "auy1103-prod-vpc"
+            # (4 unchanged elements hidden)
+        }
+      ~ vpc_id   = "vpc-0a2f39df8dded86ed" -> (known after apply)
+        # (3 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_nat_gateway.this[0] must be replaced
+-/+ resource "aws_nat_gateway" "this" {
+      ~ association_id                     = "eipassoc-01c14b49d25c0e391" -> (known after apply)
+      + auto_provision_zones               = (known after apply)
+      + auto_scaling_ips                   = (known after apply)
+      ~ availability_mode                  = "zonal" -> (known after apply)
+      ~ id                                 = "nat-0f31eb0dfa06e76c5" -> (known after apply)
+      ~ network_interface_id               = "eni-05b77c365ebab9bba" -> (known after apply)
+      ~ private_ip                         = "10.10.0.88" -> (known after apply)
+      ~ public_ip                          = "18.235.72.24" -> (known after apply)
+      ~ regional_nat_gateway_address       = [] -> (known after apply)
+      + regional_nat_gateway_auto_mode     = (known after apply)
+      + route_table_id                     = (known after apply)
+      ~ secondary_allocation_ids           = [] -> (known after apply)
+      ~ secondary_private_ip_address_count = 0 -> (known after apply)
+      ~ secondary_private_ip_addresses     = [] -> (known after apply)
+      ~ subnet_id                          = "subnet-0824752a27709bc0c" -> (known after apply) # forces replacement
+      ~ tags                               = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-vpc-us-east-1a" -> "auy1103-prod-vpc-us-east-1a"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+      ~ tags_all                           = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-vpc-us-east-1a" -> "auy1103-prod-vpc-us-east-1a"
+            # (4 unchanged elements hidden)
+        }
+      ~ vpc_id                             = "vpc-0a2f39df8dded86ed" -> (known after apply)
+        # (3 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_route.private_nat_gateway[0] must be replaced
+-/+ resource "aws_route" "private_nat_gateway" {
+      ~ id                          = "r-rtb-0c41f67c601e7de141080289494" -> (known after apply)
+      + instance_id                 = (known after apply)
+      + instance_owner_id           = (known after apply)
+      ~ nat_gateway_id              = "nat-0f31eb0dfa06e76c5" -> (known after apply)
+      + network_interface_id        = (known after apply)
+      ~ origin                      = "CreateRoute" -> (known after apply)
+      ~ route_table_id              = "rtb-0c41f67c601e7de14" -> (known after apply) # forces replacement
+      ~ state                       = "active" -> (known after apply)
+        # (13 unchanged attributes hidden)
+
+        # (1 unchanged block hidden)
+    }
+
+  # module.vpc.aws_route.public_internet_gateway[0] must be replaced
+-/+ resource "aws_route" "public_internet_gateway" {
+      ~ id                          = "r-rtb-020995a89b4d335c71080289494" -> (known after apply)
+      + instance_id                 = (known after apply)
+      + instance_owner_id           = (known after apply)
+      + network_interface_id        = (known after apply)
+      ~ origin                      = "CreateRoute" -> (known after apply)
+      ~ route_table_id              = "rtb-020995a89b4d335c7" -> (known after apply) # forces replacement
+      ~ state                       = "active" -> (known after apply)
+        # (14 unchanged attributes hidden)
+
+        # (1 unchanged block hidden)
+    }
+
+  # module.vpc.aws_route_table.private[0] must be replaced
+-/+ resource "aws_route_table" "private" {
+      ~ arn              = "arn:aws:ec2:us-east-1:151063323597:route-table/rtb-0c41f67c601e7de14" -> (known after apply)
+      ~ id               = "rtb-0c41f67c601e7de14" -> (known after apply)
+      ~ owner_id         = "151063323597" -> (known after apply)
+      ~ propagating_vgws = [] -> (known after apply)
+      ~ route            = [
+          - {
+              - cidr_block                 = "0.0.0.0/0"
+              - nat_gateway_id             = "nat-0f31eb0dfa06e76c5"
+                # (12 unchanged attributes hidden)
+            },
+        ] -> (known after apply)
+      ~ tags             = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-vpc-private" -> "auy1103-prod-vpc-private"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+      ~ tags_all         = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-vpc-private" -> "auy1103-prod-vpc-private"
+            # (4 unchanged elements hidden)
+        }
+      ~ vpc_id           = "vpc-0a2f39df8dded86ed" -> (known after apply) # forces replacement
+        # (1 unchanged attribute hidden)
+    }
+
+  # module.vpc.aws_route_table.public[0] must be replaced
+-/+ resource "aws_route_table" "public" {
+      ~ arn              = "arn:aws:ec2:us-east-1:151063323597:route-table/rtb-020995a89b4d335c7" -> (known after apply)
+      ~ id               = "rtb-020995a89b4d335c7" -> (known after apply)
+      ~ owner_id         = "151063323597" -> (known after apply)
+      ~ propagating_vgws = [] -> (known after apply)
+      ~ route            = [
+          - {
+              - cidr_block                 = "0.0.0.0/0"
+              - gateway_id                 = "igw-086bd3996f3da27cb"
+                # (12 unchanged attributes hidden)
+            },
+        ] -> (known after apply)
+      ~ tags             = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-vpc-public" -> "auy1103-prod-vpc-public"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+      ~ tags_all         = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-vpc-public" -> "auy1103-prod-vpc-public"
+            # (4 unchanged elements hidden)
+        }
+      ~ vpc_id           = "vpc-0a2f39df8dded86ed" -> (known after apply) # forces replacement
+        # (1 unchanged attribute hidden)
+    }
+
+  # module.vpc.aws_route_table_association.private[0] must be replaced
+-/+ resource "aws_route_table_association" "private" {
+      ~ id             = "rtbassoc-0fc14452f4c834887" -> (known after apply)
+      ~ route_table_id = "rtb-0c41f67c601e7de14" -> (known after apply)
+      ~ subnet_id      = "subnet-01dbc12d28bde32c0" -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_route_table_association.private[1] must be replaced
+-/+ resource "aws_route_table_association" "private" {
+      ~ id             = "rtbassoc-0b197b08e71da947f" -> (known after apply)
+      ~ route_table_id = "rtb-0c41f67c601e7de14" -> (known after apply)
+      ~ subnet_id      = "subnet-003f13b87cb2ba307" -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_route_table_association.public[0] must be replaced
+-/+ resource "aws_route_table_association" "public" {
+      ~ id             = "rtbassoc-004d9d8681a72ab2d" -> (known after apply)
+      ~ route_table_id = "rtb-020995a89b4d335c7" -> (known after apply)
+      ~ subnet_id      = "subnet-0824752a27709bc0c" -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_route_table_association.public[1] must be replaced
+-/+ resource "aws_route_table_association" "public" {
+      ~ id             = "rtbassoc-00af91f4503f3b421" -> (known after apply)
+      ~ route_table_id = "rtb-020995a89b4d335c7" -> (known after apply)
+      ~ subnet_id      = "subnet-0f77cfc9ed4459352" -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_subnet.private[0] must be replaced
++/- resource "aws_subnet" "private" {
+      ~ arn                                            = "arn:aws:ec2:us-east-1:151063323597:subnet/subnet-01dbc12d28bde32c0" -> (known after apply)
+      ~ availability_zone_id                           = "use1-az6" -> (known after apply)
+      ~ cidr_block                                     = "10.10.10.0/24" -> "10.20.10.0/24" # forces replacement
+      - enable_lni_at_device_index                     = 0 -> null
+      ~ id                                             = "subnet-01dbc12d28bde32c0" -> (known after apply)
+      + ipv6_cidr_block                                = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      - map_customer_owned_ip_on_launch                = false -> null
+      ~ owner_id                                       = "151063323597" -> (known after apply)
+      ~ private_dns_hostname_type_on_launch            = "ip-name" -> (known after apply)
+      ~ tags                                           = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-vpc-private-us-east-1a" -> "auy1103-prod-vpc-private-us-east-1a"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+            "Tier"        = "private"
+        }
+      ~ tags_all                                       = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-vpc-private-us-east-1a" -> "auy1103-prod-vpc-private-us-east-1a"
+            # (5 unchanged elements hidden)
+        }
+      ~ vpc_id                                         = "vpc-0a2f39df8dded86ed" -> (known after apply) # forces replacement
+        # (10 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_subnet.private[1] must be replaced
++/- resource "aws_subnet" "private" {
+      ~ arn                                            = "arn:aws:ec2:us-east-1:151063323597:subnet/subnet-003f13b87cb2ba307" -> (known after apply)
+      ~ availability_zone_id                           = "use1-az1" -> (known after apply)
+      ~ cidr_block                                     = "10.10.11.0/24" -> "10.20.11.0/24" # forces replacement
+      - enable_lni_at_device_index                     = 0 -> null
+      ~ id                                             = "subnet-003f13b87cb2ba307" -> (known after apply)
+      + ipv6_cidr_block                                = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      - map_customer_owned_ip_on_launch                = false -> null
+      ~ owner_id                                       = "151063323597" -> (known after apply)
+      ~ private_dns_hostname_type_on_launch            = "ip-name" -> (known after apply)
+      ~ tags                                           = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-vpc-private-us-east-1b" -> "auy1103-prod-vpc-private-us-east-1b"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+            "Tier"        = "private"
+        }
+      ~ tags_all                                       = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-vpc-private-us-east-1b" -> "auy1103-prod-vpc-private-us-east-1b"
+            # (5 unchanged elements hidden)
+        }
+      ~ vpc_id                                         = "vpc-0a2f39df8dded86ed" -> (known after apply) # forces replacement
+        # (10 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_subnet.public[0] must be replaced
+-/+ resource "aws_subnet" "public" {
+      ~ arn                                            = "arn:aws:ec2:us-east-1:151063323597:subnet/subnet-0824752a27709bc0c" -> (known after apply)
+      ~ availability_zone_id                           = "use1-az6" -> (known after apply)
+      ~ cidr_block                                     = "10.10.0.0/24" -> "10.20.0.0/24" # forces replacement
+      - enable_lni_at_device_index                     = 0 -> null
+      ~ id                                             = "subnet-0824752a27709bc0c" -> (known after apply)
+      + ipv6_cidr_block                                = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      - map_customer_owned_ip_on_launch                = false -> null
+      ~ owner_id                                       = "151063323597" -> (known after apply)
+      ~ private_dns_hostname_type_on_launch            = "ip-name" -> (known after apply)
+      ~ tags                                           = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-vpc-public-us-east-1a" -> "auy1103-prod-vpc-public-us-east-1a"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+            "Tier"        = "public"
+        }
+      ~ tags_all                                       = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-vpc-public-us-east-1a" -> "auy1103-prod-vpc-public-us-east-1a"
+            # (5 unchanged elements hidden)
+        }
+      ~ vpc_id                                         = "vpc-0a2f39df8dded86ed" -> (known after apply) # forces replacement
+        # (10 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_subnet.public[1] must be replaced
+-/+ resource "aws_subnet" "public" {
+      ~ arn                                            = "arn:aws:ec2:us-east-1:151063323597:subnet/subnet-0f77cfc9ed4459352" -> (known after apply)
+      ~ availability_zone_id                           = "use1-az1" -> (known after apply)
+      ~ cidr_block                                     = "10.10.1.0/24" -> "10.20.1.0/24" # forces replacement
+      - enable_lni_at_device_index                     = 0 -> null
+      ~ id                                             = "subnet-0f77cfc9ed4459352" -> (known after apply)
+      + ipv6_cidr_block                                = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      - map_customer_owned_ip_on_launch                = false -> null
+      ~ owner_id                                       = "151063323597" -> (known after apply)
+      ~ private_dns_hostname_type_on_launch            = "ip-name" -> (known after apply)
+      ~ tags                                           = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-vpc-public-us-east-1b" -> "auy1103-prod-vpc-public-us-east-1b"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+            "Tier"        = "public"
+        }
+      ~ tags_all                                       = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-vpc-public-us-east-1b" -> "auy1103-prod-vpc-public-us-east-1b"
+            # (5 unchanged elements hidden)
+        }
+      ~ vpc_id                                         = "vpc-0a2f39df8dded86ed" -> (known after apply) # forces replacement
+        # (10 unchanged attributes hidden)
+    }
+
+  # module.vpc.aws_vpc.this[0] must be replaced
++/- resource "aws_vpc" "this" {
+      ~ arn                                  = "arn:aws:ec2:us-east-1:151063323597:vpc/vpc-0a2f39df8dded86ed" -> (known after apply)
+      - assign_generated_ipv6_cidr_block     = false -> null
+      ~ cidr_block                           = "10.10.0.0/16" -> "10.20.0.0/16" # forces replacement
+      ~ default_network_acl_id               = "acl-0dd93d1ee83046719" -> (known after apply)
+      ~ default_route_table_id               = "rtb-049a2baaf914ad9ce" -> (known after apply)
+      ~ default_security_group_id            = "sg-0074c55d486566738" -> (known after apply)
+      ~ dhcp_options_id                      = "dopt-0136d71e7cd20d13e" -> (known after apply)
+      ~ enable_network_address_usage_metrics = false -> (known after apply)
+      ~ id                                   = "vpc-0a2f39df8dded86ed" -> (known after apply)
+      + ipv6_association_id                  = (known after apply)
+      + ipv6_cidr_block                      = (known after apply)
+      + ipv6_cidr_block_network_border_group = (known after apply)
+      - ipv6_netmask_length                  = 0 -> null
+      ~ main_route_table_id                  = "rtb-049a2baaf914ad9ce" -> (known after apply)
+      ~ owner_id                             = "151063323597" -> (known after apply)
+      ~ tags                                 = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-vpc" -> "auy1103-prod-vpc"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+        }
+      ~ tags_all                             = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-vpc" -> "auy1103-prod-vpc"
+            # (4 unchanged elements hidden)
+        }
+        # (5 unchanged attributes hidden)
+    }
+
+  # module.web.aws_instance.this must be replaced
+-/+ resource "aws_instance" "this" {
+      ~ arn                                  = "arn:aws:ec2:us-east-1:151063323597:instance/i-02c503b10a4bc707a" -> (known after apply)
+      ~ availability_zone                    = "us-east-1a" -> (known after apply)
+      ~ disable_api_stop                     = false -> (known after apply)
+      ~ disable_api_termination              = false -> (known after apply)
+      ~ ebs_optimized                        = false -> (known after apply)
+      + enable_primary_ipv6                  = (known after apply)
+      - hibernation                          = false -> null
+      + host_id                              = (known after apply)
+      + host_resource_group_arn              = (known after apply)
+      + iam_instance_profile                 = (known after apply)
+      ~ id                                   = "i-02c503b10a4bc707a" -> (known after apply)
+      ~ instance_initiated_shutdown_behavior = "stop" -> (known after apply)
+      + instance_lifecycle                   = (known after apply)
+      ~ instance_state                       = "running" -> (known after apply)
+      ~ instance_type                        = "t3.micro" -> "t3.small"
+      ~ ipv6_address_count                   = 0 -> (known after apply)
+      ~ ipv6_addresses                       = [] -> (known after apply)
+      + key_name                             = (known after apply)
+      ~ monitoring                           = false -> (known after apply)
+      + outpost_arn                          = (known after apply)
+      + password_data                        = (known after apply)
+      + placement_group                      = (known after apply)
+      + placement_group_id                   = (known after apply)
+      ~ placement_partition_number           = 0 -> (known after apply)
+      ~ primary_network_interface_id         = "eni-0daaa657329e4010e" -> (known after apply)
+      ~ private_dns                          = "ip-10-10-10-169.ec2.internal" -> (known after apply)
+      ~ private_ip                           = "10.10.10.169" -> (known after apply)
+      + public_dns                           = (known after apply)
+      + public_ip                            = (known after apply)
+      ~ secondary_private_ips                = [] -> (known after apply)
+      ~ security_groups                      = [] -> (known after apply)
+      + spot_instance_request_id             = (known after apply)
+      ~ subnet_id                            = "subnet-01dbc12d28bde32c0" -> (known after apply) # forces replacement
+      ~ tags                                 = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-web" -> "auy1103-prod-web"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+            "Rol"         = "webserver"
+        }
+      ~ tags_all                             = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-web" -> "auy1103-prod-web"
+            # (5 unchanged elements hidden)
+        }
+      ~ tenancy                              = "default" -> (known after apply)
+      ~ user_data                            = <<-EOT # forces replacement
+            #!/bin/bash
+            set -euxo pipefail
+            export DEBIAN_FRONTEND=noninteractive
+            
+            # Esperar conexion a Internet via NAT Gateway
+            for i in {1..30}; do
+              if curl -s -m 2 https://archive.ubuntu.com > /dev/null 2>&1; then break; fi
+              sleep 3
+            done
+            
+            for i in {1..5}; do
+              apt-get update -y && apt-get install -y nginx && break || sleep 5
+            done
+            
+            cat > /var/www/html/index.html <<'HTML'
+            <!DOCTYPE html>
+            <html lang="es">
+            <head><meta charset="utf-8"><title>auy1103 - WebServer</title></head>
+            <body style="font-family:sans-serif;text-align:center;margin-top:10%">
+              <h1>WebServer Estático - auy1103</h1>
+              <h2>Alumno: Fernando Galdamez y Jose Villaroel</h2>
+          -   <p>Entorno: dev | Asignatura: AUY1103</p>
+          +   <p>Entorno: prod | Asignatura: AUY1103</p>
+            </body>
+            </html>
+            HTML
+            
+            systemctl enable nginx
+            systemctl restart nginx
+        EOT
+      + user_data_base64                     = (known after apply)
+      ~ vpc_security_group_ids               = [
+          - "sg-077c4c7df1500e0c0",
+        ] -> (known after apply)
+        # (7 unchanged attributes hidden)
+
+      ~ capacity_reservation_specification (known after apply)
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = "open" -> null
+        }
+
+      ~ cpu_options (known after apply)
+      - cpu_options {
+          - core_count            = 1 -> null
+          - threads_per_core      = 2 -> null
+            # (2 unchanged attributes hidden)
+        }
+
+      - credit_specification {
+          - cpu_credits = "unlimited" -> null
+        }
+
+      ~ ebs_block_device (known after apply)
+
+      ~ enclave_options (known after apply)
+      - enclave_options {
+          - enabled = false -> null
+        }
+
+      ~ ephemeral_block_device (known after apply)
+
+      ~ instance_market_options (known after apply)
+
+      ~ maintenance_options (known after apply)
+      - maintenance_options {
+          - auto_recovery = "default" -> null
+        }
+
+      ~ metadata_options {
+          ~ http_put_response_hop_limit = 2 -> (known after apply)
+          ~ instance_metadata_tags      = "disabled" -> (known after apply)
+            # (3 unchanged attributes hidden)
+        }
+
+      ~ network_interface (known after apply)
+
+      ~ primary_network_interface (known after apply)
+      - primary_network_interface {
+          - delete_on_termination = true -> null
+          - network_interface_id  = "eni-0daaa657329e4010e" -> null
+        }
+
+      ~ private_dns_name_options (known after apply)
+      - private_dns_name_options {
+          - enable_resource_name_dns_a_record    = false -> null
+          - enable_resource_name_dns_aaaa_record = false -> null
+          - hostname_type                        = "ip-name" -> null
+        }
+
+      ~ root_block_device {
+          ~ device_name           = "/dev/sda1" -> (known after apply)
+          ~ iops                  = 3000 -> (known after apply)
+          ~ kms_key_id            = "arn:aws:kms:us-east-1:151063323597:key/5b542639-f904-4c33-9f70-49a7e726f75d" -> (known after apply)
+          - tags                  = {
+              - "CostCenter"  = "academico-dev"
+              - "Environment" = "dev"
+            } -> null
+          ~ tags_all              = {
+              - "Asignatura"  = "AUY1103"
+              - "CostCenter"  = "academico-dev"
+              - "Environment" = "dev"
+              - "ManagedBy"   = "Terraform"
+              - "Owner"       = "fer.galdamez@duocuc.cl"
+              - "Project"     = "auy1103"
+            } -> (known after apply)
+          ~ throughput            = 125 -> (known after apply)
+          ~ volume_id             = "vol-008eefa57221fb893" -> (known after apply)
+            # (4 unchanged attributes hidden)
+        }
+
+      ~ secondary_network_interface (known after apply)
+    }
+
+  # module.web.aws_security_group.this must be replaced
++/- resource "aws_security_group" "this" {
+      ~ arn                    = "arn:aws:ec2:us-east-1:151063323597:security-group/sg-077c4c7df1500e0c0" -> (known after apply)
+      ~ description            = "SG de auy1103-dev-web" -> "SG de auy1103-prod-web" # forces replacement
+      ~ id                     = "sg-077c4c7df1500e0c0" -> (known after apply)
+      ~ ingress                = [
+          - {
+              - cidr_blocks      = []
+              - description      = "HTTP solo desde ALB web"
+              - from_port        = 80
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = [
+                  - "sg-0dbf500bfa10e72ea",
+                ]
+              - self             = false
+              - to_port          = 80
+            },
+          + {
+              + cidr_blocks      = []
+              + description      = "HTTP solo desde ALB web"
+              + from_port        = 80
+              + ipv6_cidr_blocks = []
+              + prefix_list_ids  = []
+              + protocol         = "tcp"
+              + security_groups  = (known after apply)
+              + self             = false
+              + to_port          = 80
+            },
+        ]
+      ~ name                   = "auy1103-dev-web-sg-0143f85089434389b3cef5d099" -> (known after apply)
+      ~ name_prefix            = "auy1103-dev-web-sg-" -> "auy1103-prod-web-sg-" # forces replacement
+      ~ owner_id               = "151063323597" -> (known after apply)
+      ~ tags                   = {
+            "Asignatura"  = "AUY1103"
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+            "ManagedBy"   = "Terraform"
+          ~ "Name"        = "auy1103-dev-web-sg" -> "auy1103-prod-web-sg"
+            "Owner"       = "fer.galdamez@duocuc.cl"
+            "Project"     = "auy1103"
+            "Rol"         = "webserver"
+        }
+      ~ tags_all               = {
+          ~ "CostCenter"  = "academico-dev" -> "academico-prod"
+          ~ "Environment" = "dev" -> "prod"
+          ~ "Name"        = "auy1103-dev-web-sg" -> "auy1103-prod-web-sg"
+            # (5 unchanged elements hidden)
+        }
+      ~ vpc_id                 = "vpc-0a2f39df8dded86ed" -> (known after apply) # forces replacement
+        # (3 unchanged attributes hidden)
+    }
+
+Plan: 42 to add, 3 to change, 39 to destroy.
+
+Changes to Outputs:
+  ~ alb_backend_dns      = "http://auy1103-dev-alb-be-483512929.us-east-1.elb.amazonaws.com" -> (known after apply)
+  ~ alb_web_dns          = "http://auy1103-dev-alb-web-1441100790.us-east-1.elb.amazonaws.com" -> (known after apply)
+  ~ backend_instance_ids = {
+      ~ backend-01 = "i-0e3327af281492a79" -> (known after apply)
+      ~ backend-02 = "i-0b5873b01b7a49704" -> (known after apply)
+      ~ backend-03 = "i-0ca301b0aa7a9f162" -> (known after apply)
+      + backend-04 = (known after apply)
+    }
+
+Warning: Resource targeting is in effect
+
+You are creating a plan with the -target option, which means that the result
+of this plan may not represent all of the changes requested by the current
+configuration.
+
+The -target option is not for routine use, and is provided only for
+exceptional situations such as recovering from errors or mistakes, or when
+Terraform specifically suggests to use it as part of an error message.
+
+─────────────────────────────────────────────────────────────────────────────
+
+Note: You didn't use the -out option to save this plan, so Terraform can't
+guarantee to take exactly these actions if you run "terraform apply" now.

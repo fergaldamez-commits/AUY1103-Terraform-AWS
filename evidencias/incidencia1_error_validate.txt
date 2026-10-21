@@ -1,0 +1,15 @@
+﻿terraform.exe : 
+En línea: 1 Carácter: 41
++ ... HOME\.local\bin\terraform.exe"; & $tf validate -no-color 2>&1 | Out-F ...
++                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Error: Invalid for_each argument
+
+  on compute.tf line 3, in resource "aws_security_group" "alb":
+   3:   for_each = ["web", "backend"]
+
+The given "for_each" argument value is unsuitable: the "for_each" argument
+must be a map, or set of strings, and you have provided a value of type
+tuple.

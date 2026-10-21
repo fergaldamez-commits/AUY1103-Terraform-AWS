@@ -1,0 +1,33 @@
+# Directorio local de providers/módulos
+.terraform/
+**/.terraform/*
+
+# Estado (contiene secretos en texto plano)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Planes binarios
+*.tfplan
+*.plan
+
+# Logs y crash
+crash.log
+crash.*.log
+terraform.log
+
+# Overrides locales
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config
+.terraformrc
+terraform.rc
+
+# Credenciales
+.aws/
+*.pem
+
+# .terraform.lock.hcl NO se ignora: el estándar de HashiCorp es versionarlo para builds reproducibles.

@@ -1,0 +1,113 @@
+data.aws_availability_zones.disponibles: Reading...
+data.aws_ami.ubuntu: Reading...
+module.vpc.aws_vpc.this[0]: Refreshing state... [id=vpc-0a2f39df8dded86ed]
+data.aws_availability_zones.disponibles: Read complete after 1s [id=us-east-1]
+data.aws_ami.ubuntu: Read complete after 1s [id=ami-02a9cdd4e98bc3c78]
+aws_security_group.alb["web"]: Refreshing state... [id=sg-0dbf500bfa10e72ea]
+module.vpc.aws_subnet.private[0]: Refreshing state... [id=subnet-01dbc12d28bde32c0]
+module.vpc.aws_subnet.private[1]: Refreshing state... [id=subnet-003f13b87cb2ba307]
+aws_security_group.alb["backend"]: Refreshing state... [id=sg-097223ad86c214fed]
+aws_lb_target_group.backend: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c]
+aws_lb_target_group.web: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-web/5de3b1ab99895a6a]
+module.web.aws_security_group.this: Refreshing state... [id=sg-077c4c7df1500e0c0]
+module.backend["backend-02"].aws_security_group.this: Refreshing state... [id=sg-0926d9ff7a4380143]
+module.backend["backend-01"].aws_security_group.this: Refreshing state... [id=sg-055bdb810e6ea90e0]
+module.backend["backend-03"].aws_security_group.this: Refreshing state... [id=sg-0608510b68f16f76d]
+module.web.aws_instance.this: Refreshing state... [id=i-02c503b10a4bc707a]
+module.backend["backend-01"].aws_instance.this: Refreshing state... [id=i-0e3327af281492a79]
+module.backend["backend-02"].aws_instance.this: Refreshing state... [id=i-00eadc04060c86cbb]
+module.backend["backend-03"].aws_instance.this: Refreshing state... [id=i-0ca301b0aa7a9f162]
+aws_lb_target_group_attachment.backend["backend-02"]: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c,i-0d63227d40f98efdd,80]
+aws_lb_target_group_attachment.backend["backend-03"]: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c,i-059393e4d2e94899f,80]
+aws_lb_target_group_attachment.backend["backend-01"]: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c,i-0521757d4f2813a80,80]
+aws_lb_target_group_attachment.web: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-web/5de3b1ab99895a6a,i-02ddfdd5a84c9571d,80]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_lb_target_group_attachment.backend["backend-01"] will be created
+  + resource "aws_lb_target_group_attachment" "backend" {
+      + id               = (known after apply)
+      + port             = 80
+      + region           = "us-east-1"
+      + target_group_arn = "arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c"
+      + target_id        = "i-0e3327af281492a79"
+    }
+
+  # aws_lb_target_group_attachment.backend["backend-02"] will be created
+  + resource "aws_lb_target_group_attachment" "backend" {
+      + id               = (known after apply)
+      + port             = 80
+      + region           = "us-east-1"
+      + target_group_arn = "arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c"
+      + target_id        = "i-00eadc04060c86cbb"
+    }
+
+  # aws_lb_target_group_attachment.backend["backend-03"] will be created
+  + resource "aws_lb_target_group_attachment" "backend" {
+      + id               = (known after apply)
+      + port             = 80
+      + region           = "us-east-1"
+      + target_group_arn = "arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c"
+      + target_id        = "i-0ca301b0aa7a9f162"
+    }
+
+  # aws_lb_target_group_attachment.web will be created
+  + resource "aws_lb_target_group_attachment" "web" {
+      + id               = (known after apply)
+      + port             = 80
+      + region           = "us-east-1"
+      + target_group_arn = "arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-web/5de3b1ab99895a6a"
+      + target_id        = "i-02c503b10a4bc707a"
+    }
+
+Plan: 4 to add, 0 to change, 0 to destroy.
+aws_lb_target_group_attachment.web: Creating...
+aws_lb_target_group_attachment.backend["backend-03"]: Creating...
+aws_lb_target_group_attachment.backend["backend-01"]: Creating...
+aws_lb_target_group_attachment.backend["backend-02"]: Creating...
+aws_lb_target_group_attachment.backend["backend-01"]: Creation complete after 0s [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c,i-0e3327af281492a79,80]
+aws_lb_target_group_attachment.backend["backend-03"]: Creation complete after 0s [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c,i-0ca301b0aa7a9f162,80]
+aws_lb_target_group_attachment.web: Creation complete after 0s [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-web/5de3b1ab99895a6a,i-02c503b10a4bc707a,80]
+aws_lb_target_group_attachment.backend["backend-02"]: Creation complete after 0s [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c,i-00eadc04060c86cbb,80]
+
+Warning: Resource targeting is in effect
+
+You are creating a plan with the -target option, which means that the result
+of this plan may not represent all of the changes requested by the current
+configuration.
+
+The -target option is not for routine use, and is provided only for
+exceptional situations such as recovering from errors or mistakes, or when
+Terraform specifically suggests to use it as part of an error message.
+
+Warning: Applied changes may be incomplete
+
+The plan was created with the -target option in effect, so some changes
+requested in the configuration may have been ignored and the output values
+may not be fully updated. Run the following command to verify that no other
+changes are pending:
+    terraform plan
+
+Note that the -target option is not suitable for routine use, and is provided
+only for exceptional situations such as recovering from errors or mistakes,
+or when Terraform specifically suggests to use it as part of an error
+message.
+
+Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+alb_backend_dns = "http://auy1103-dev-alb-be-483512929.us-east-1.elb.amazonaws.com"
+alb_web_dns = "http://auy1103-dev-alb-web-1441100790.us-east-1.elb.amazonaws.com"
+backend_instance_ids = {
+  "backend-01" = "i-0e3327af281492a79"
+  "backend-02" = "i-00eadc04060c86cbb"
+  "backend-03" = "i-0ca301b0aa7a9f162"
+}
+rds_endpoint = "auy1103-dev-mysql.clpobhbzhghp.us-east-1.rds.amazonaws.com:3306"
+rds_password = <sensitive>
+region_desplegada = "us-east-1"

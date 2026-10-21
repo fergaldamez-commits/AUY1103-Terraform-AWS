@@ -1,0 +1,28 @@
+#!/bin/bash
+set -euxo pipefail
+export DEBIAN_FRONTEND=noninteractive
+
+# Esperar conexion a Internet via NAT Gateway
+for i in {1..30}; do
+  if curl -s -m 2 https://archive.ubuntu.com > /dev/null 2>&1; then break; fi
+  sleep 3
+done
+
+for i in {1..5}; do
+  apt-get update -y && apt-get install -y nginx && break || sleep 5
+done
+
+cat > /var/www/html/index.html <<'HTML'
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="utf-8"><title>${proyecto} - WebServer</title></head>
+<body style="font-family:sans-serif;text-align:center;margin-top:10%">
+  <h1>WebServer Estático - ${proyecto}</h1>
+  <h2>Alumno: ${nombre_alumno}</h2>
+  <p>Entorno: ${entorno} | Asignatura: ${asignatura}</p>
+</body>
+</html>
+HTML
+
+systemctl enable nginx
+systemctl restart nginx

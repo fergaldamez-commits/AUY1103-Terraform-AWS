@@ -1,0 +1,171 @@
+random_id.sufijo_bucket: Creating...
+random_password.rds: Creating...
+random_id.sufijo_bucket: Creation complete after 0s [id=UNdt6g]
+random_password.rds: Creation complete after 0s [id=none]
+module.vpc.aws_vpc.this[0]: Creating...
+aws_s3_bucket.estatico: Creating...
+module.vpc.aws_vpc.this[0]: Creation complete after 3s [id=vpc-0a2f39df8dded86ed]
+module.vpc.aws_route_table.private[0]: Creating...
+module.vpc.aws_default_route_table.default[0]: Creating...
+module.vpc.aws_default_security_group.this[0]: Creating...
+module.vpc.aws_subnet.private[1]: Creating...
+module.vpc.aws_subnet.private[0]: Creating...
+aws_lb_target_group.web: Creating...
+aws_lb_target_group.backend: Creating...
+aws_security_group.alb["backend"]: Creating...
+module.vpc.aws_default_network_acl.this[0]: Creating...
+aws_security_group.alb["web"]: Creating...
+module.vpc.aws_default_route_table.default[0]: Creation complete after 1s [id=rtb-049a2baaf914ad9ce]
+module.vpc.aws_internet_gateway.this[0]: Creating...
+module.vpc.aws_route_table.private[0]: Creation complete after 1s [id=rtb-0c41f67c601e7de14]
+module.vpc.aws_route_table.public[0]: Creating...
+module.vpc.aws_subnet.private[0]: Creation complete after 2s [id=subnet-01dbc12d28bde32c0]
+module.vpc.aws_subnet.public[1]: Creating...
+module.vpc.aws_subnet.private[1]: Creation complete after 2s [id=subnet-003f13b87cb2ba307]
+module.vpc.aws_subnet.public[0]: Creating...
+module.vpc.aws_internet_gateway.this[0]: Creation complete after 1s [id=igw-086bd3996f3da27cb]
+module.vpc.aws_route_table_association.private[1]: Creating...
+module.vpc.aws_route_table.public[0]: Creation complete after 1s [id=rtb-020995a89b4d335c7]
+module.vpc.aws_route_table_association.private[0]: Creating...
+aws_lb_target_group.backend: Creation complete after 2s [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c]
+module.vpc.aws_eip.nat[0]: Creating...
+aws_lb_target_group.web: Creation complete after 2s [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-web/5de3b1ab99895a6a]
+module.vpc.aws_route.public_internet_gateway[0]: Creating...
+module.vpc.aws_default_network_acl.this[0]: Creation complete after 3s [id=acl-0dd93d1ee83046719]
+module.vpc.aws_subnet.public[1]: Creation complete after 1s [id=subnet-0f77cfc9ed4459352]
+module.vpc.aws_route_table_association.private[1]: Creation complete after 1s [id=rtbassoc-0b197b08e71da947f]
+module.vpc.aws_default_security_group.this[0]: Creation complete after 3s [id=sg-0074c55d486566738]
+module.vpc.aws_route_table_association.private[0]: Creation complete after 1s [id=rtbassoc-0fc14452f4c834887]
+module.vpc.aws_subnet.public[0]: Creation complete after 1s [id=subnet-0824752a27709bc0c]
+module.vpc.aws_route_table_association.public[0]: Creating...
+module.vpc.aws_route_table_association.public[1]: Creating...
+aws_db_subnet_group.rds: Creating...
+module.vpc.aws_route.public_internet_gateway[0]: Creation complete after 2s [id=r-rtb-020995a89b4d335c71080289494]
+module.vpc.aws_route_table_association.public[0]: Creation complete after 1s [id=rtbassoc-004d9d8681a72ab2d]
+module.vpc.aws_route_table_association.public[1]: Creation complete after 1s [id=rtbassoc-00af91f4503f3b421]
+aws_security_group.alb["backend"]: Creation complete after 4s [id=sg-097223ad86c214fed]
+aws_security_group.alb["web"]: Creation complete after 4s [id=sg-0dbf500bfa10e72ea]
+module.backend["backend-03"].aws_security_group.this: Creating...
+module.backend["backend-02"].aws_security_group.this: Creating...
+module.backend["backend-01"].aws_security_group.this: Creating...
+aws_lb.backend: Creating...
+module.web.aws_security_group.this: Creating...
+aws_lb.web: Creating...
+module.vpc.aws_eip.nat[0]: Creation complete after 3s [id=eipalloc-0e07ec16b1fb6405d]
+module.vpc.aws_nat_gateway.this[0]: Creating...
+aws_db_subnet_group.rds: Creation complete after 2s [id=auy1103-dev-rds-subnets]
+module.backend["backend-01"].aws_security_group.this: Creation complete after 4s [id=sg-055bdb810e6ea90e0]
+module.backend["backend-03"].aws_security_group.this: Creation complete after 4s [id=sg-0608510b68f16f76d]
+module.backend["backend-02"].aws_security_group.this: Creation complete after 4s [id=sg-0926d9ff7a4380143]
+module.web.aws_security_group.this: Creation complete after 4s [id=sg-077c4c7df1500e0c0]
+module.web.aws_instance.this: Creating...
+module.backend["backend-01"].aws_instance.this: Creating...
+module.backend["backend-02"].aws_instance.this: Creating...
+module.backend["backend-03"].aws_instance.this: Creating...
+aws_lb.web: Still creating... [10s elapsed]
+aws_lb.backend: Still creating... [10s elapsed]
+module.vpc.aws_nat_gateway.this[0]: Still creating... [10s elapsed]
+module.web.aws_instance.this: Still creating... [10s elapsed]
+module.backend["backend-03"].aws_instance.this: Still creating... [10s elapsed]
+module.backend["backend-01"].aws_instance.this: Still creating... [10s elapsed]
+module.backend["backend-02"].aws_instance.this: Still creating... [10s elapsed]
+module.backend["backend-01"].aws_instance.this: Creation complete after 14s [id=i-0521757d4f2813a80]
+module.backend["backend-02"].aws_instance.this: Creation complete after 14s [id=i-0d63227d40f98efdd]
+module.backend["backend-03"].aws_instance.this: Creation complete after 14s [id=i-059393e4d2e94899f]
+aws_lb_target_group_attachment.backend["backend-01"]: Creating...
+aws_lb_target_group_attachment.backend["backend-03"]: Creating...
+aws_lb_target_group_attachment.backend["backend-02"]: Creating...
+aws_security_group.rds: Creating...
+module.web.aws_instance.this: Creation complete after 14s [id=i-02ddfdd5a84c9571d]
+aws_lb_target_group_attachment.web: Creating...
+aws_lb_target_group_attachment.backend["backend-01"]: Creation complete after 0s [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c,i-0521757d4f2813a80,80]
+aws_lb_target_group_attachment.backend["backend-03"]: Creation complete after 0s [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c,i-059393e4d2e94899f,80]
+aws_lb_target_group_attachment.backend["backend-02"]: Creation complete after 0s [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-be/a4c5eb5659f0a72c,i-0d63227d40f98efdd,80]
+aws_lb_target_group_attachment.web: Creation complete after 1s [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/auy1103-dev-tg-web/5de3b1ab99895a6a,i-02ddfdd5a84c9571d,80]
+aws_lb.web: Still creating... [20s elapsed]
+aws_lb.backend: Still creating... [20s elapsed]
+module.vpc.aws_nat_gateway.this[0]: Still creating... [20s elapsed]
+aws_security_group.rds: Creation complete after 3s [id=sg-05910bcf7770917dd]
+aws_db_instance.mysql: Creating...
+aws_lb.web: Still creating... [30s elapsed]
+aws_lb.backend: Still creating... [30s elapsed]
+module.vpc.aws_nat_gateway.this[0]: Still creating... [30s elapsed]
+aws_db_instance.mysql: Still creating... [10s elapsed]
+aws_lb.web: Still creating... [40s elapsed]
+aws_lb.backend: Still creating... [40s elapsed]
+module.vpc.aws_nat_gateway.this[0]: Still creating... [40s elapsed]
+aws_db_instance.mysql: Still creating... [20s elapsed]
+aws_lb.web: Still creating... [50s elapsed]
+aws_lb.backend: Still creating... [50s elapsed]
+module.vpc.aws_nat_gateway.this[0]: Still creating... [50s elapsed]
+aws_db_instance.mysql: Still creating... [30s elapsed]
+aws_lb.backend: Still creating... [1m0s elapsed]
+aws_lb.web: Still creating... [1m0s elapsed]
+module.vpc.aws_nat_gateway.this[0]: Still creating... [1m0s elapsed]
+aws_db_instance.mysql: Still creating... [40s elapsed]
+aws_lb.backend: Still creating... [1m10s elapsed]
+aws_lb.web: Still creating... [1m10s elapsed]
+module.vpc.aws_nat_gateway.this[0]: Still creating... [1m10s elapsed]
+aws_db_instance.mysql: Still creating... [50s elapsed]
+aws_lb.web: Still creating... [1m20s elapsed]
+aws_lb.backend: Still creating... [1m20s elapsed]
+module.vpc.aws_nat_gateway.this[0]: Still creating... [1m20s elapsed]
+aws_db_instance.mysql: Still creating... [1m0s elapsed]
+aws_lb.backend: Still creating... [1m30s elapsed]
+aws_lb.web: Still creating... [1m30s elapsed]
+module.vpc.aws_nat_gateway.this[0]: Still creating... [1m30s elapsed]
+aws_db_instance.mysql: Still creating... [1m10s elapsed]
+aws_lb.backend: Still creating... [1m40s elapsed]
+aws_lb.web: Still creating... [1m40s elapsed]
+module.vpc.aws_nat_gateway.this[0]: Still creating... [1m40s elapsed]
+aws_db_instance.mysql: Still creating... [1m20s elapsed]
+aws_lb.backend: Still creating... [1m50s elapsed]
+aws_lb.web: Still creating... [1m50s elapsed]
+module.vpc.aws_nat_gateway.this[0]: Still creating... [1m50s elapsed]
+aws_db_instance.mysql: Still creating... [1m30s elapsed]
+aws_lb.backend: Still creating... [2m0s elapsed]
+aws_lb.web: Still creating... [2m0s elapsed]
+module.vpc.aws_nat_gateway.this[0]: Still creating... [2m0s elapsed]
+aws_db_instance.mysql: Still creating... [1m41s elapsed]
+module.vpc.aws_nat_gateway.this[0]: Creation complete after 2m7s [id=nat-0f31eb0dfa06e76c5]
+module.vpc.aws_route.private_nat_gateway[0]: Creating...
+module.vpc.aws_route.private_nat_gateway[0]: Creation complete after 1s [id=r-rtb-0c41f67c601e7de141080289494]
+aws_lb.backend: Still creating... [2m10s elapsed]
+aws_lb.web: Still creating... [2m10s elapsed]
+aws_db_instance.mysql: Still creating... [1m51s elapsed]
+aws_lb.backend: Still creating... [2m20s elapsed]
+aws_lb.web: Still creating... [2m20s elapsed]
+aws_db_instance.mysql: Still creating... [2m1s elapsed]
+aws_lb.backend: Creation complete after 2m24s [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:loadbalancer/app/auy1103-dev-alb-be/e5ba31fccf291723]
+aws_lb_listener.backend_http: Creating...
+aws_lb.web: Creation complete after 2m24s [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:loadbalancer/app/auy1103-dev-alb-web/6d4c3c2b28f335b3]
+aws_lb_listener.web_http: Creating...
+aws_lb_listener.backend_http: Creation complete after 1s [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:listener/app/auy1103-dev-alb-be/e5ba31fccf291723/df1b3c3005be44f4]
+aws_lb_listener.web_http: Creation complete after 1s [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:listener/app/auy1103-dev-alb-web/6d4c3c2b28f335b3/435b1edb61321ff6]
+aws_db_instance.mysql: Still creating... [2m11s elapsed]
+aws_db_instance.mysql: Still creating... [2m21s elapsed]
+aws_db_instance.mysql: Still creating... [2m31s elapsed]
+aws_db_instance.mysql: Still creating... [2m41s elapsed]
+aws_db_instance.mysql: Still creating... [2m51s elapsed]
+aws_db_instance.mysql: Still creating... [3m1s elapsed]
+aws_db_instance.mysql: Still creating... [3m11s elapsed]
+aws_db_instance.mysql: Still creating... [3m21s elapsed]
+aws_db_instance.mysql: Still creating... [3m31s elapsed]
+aws_db_instance.mysql: Still creating... [3m41s elapsed]
+aws_db_instance.mysql: Still creating... [3m51s elapsed]
+aws_db_instance.mysql: Still creating... [4m1s elapsed]
+aws_db_instance.mysql: Still creating... [4m11s elapsed]
+aws_db_instance.mysql: Still creating... [4m21s elapsed]
+aws_db_instance.mysql: Still creating... [4m31s elapsed]
+aws_db_instance.mysql: Still creating... [4m41s elapsed]
+aws_db_instance.mysql: Still creating... [4m51s elapsed]
+aws_db_instance.mysql: Still creating... [5m1s elapsed]
+aws_db_instance.mysql: Still creating... [5m11s elapsed]
+aws_db_instance.mysql: Creation complete after 5m20s [id=db-U3I3UTEMPCUB54XSV4ECW2WU74]
+
+Error: reading S3 Bucket (auy1103-dev-estatico-50d76dea) object lock configuration: operation error S3: GetObjectLockConfiguration, https response error StatusCode: 403, RequestID: DKFMPN8XDDXKBDPA, HostID: KHwgGkTDXwWaEvXvk5JZxJH45JSJHCnZKN3sWpByy05a0ejTSjvUgzopiWo2XL4DI5rWlsSw3mY=, api error AccessDenied: User: arn:aws:sts::151063323597:assumed-role/voclabs/user4133678=fer.galdamez@duocuc.cl is not authorized to perform: s3:GetBucketObjectLockConfiguration on resource: "arn:aws:s3:::auy1103-dev-estatico-50d76dea" with an explicit deny in a service control policy: arn:aws:organizations::893970292197:policy/o-4fmcv8ds92/service_control_policy/p-weyji3h2
+
+  with aws_s3_bucket.estatico,
+  on storage_cdn.tf line 5, in resource "aws_s3_bucket" "estatico":
+   5: resource "aws_s3_bucket" "estatico" {
+

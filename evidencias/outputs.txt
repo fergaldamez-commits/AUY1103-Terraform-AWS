@@ -1,0 +1,10 @@
+﻿alb_backend_dns = "http://auy1103-dev-alb-be-483512929.us-east-1.elb.amazonaws.com"
+alb_web_dns = "http://auy1103-dev-alb-web-1441100790.us-east-1.elb.amazonaws.com"
+backend_instance_ids = {
+  "backend-01" = "i-0e3327af281492a79"
+  "backend-02" = "i-00eadc04060c86cbb"
+  "backend-03" = "i-0ca301b0aa7a9f162"
+}
+rds_endpoint = "auy1103-dev-mysql.clpobhbzhghp.us-east-1.rds.amazonaws.com:3306"
+rds_password = <sensitive>
+region_desplegada = "us-east-1"
