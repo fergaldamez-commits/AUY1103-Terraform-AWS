@@ -1,7 +1,7 @@
 # AUY1103 - Infraestructura como Código I
 ## Evaluación Parcial N° 3 (EP3) - Parametrización y Evolución de Infraestructura AWS con Terraform
 
-**Estudiante:** Fernando Galdamez (`fer.galdamez@duocuc.cl`)  
+**Integrantes:** Fernando Galdamez | Jose Villaroel (`fer.galdamez@duocuc.cl`)  
 **Asignatura:** AUY1103 - Infraestructura como Código I  
 **Carrera:** Ingeniería en Infraestructura y Plataformas Tecnológicas  
 **Institución:** Duoc UC  
@@ -76,7 +76,7 @@ Para garantizar consistencia y evitar colisiones de nombres en despliegues concu
 - **Etiquetado Obligatorio (Default Tags):**
   Todos los recursos integran un mapa de etiquetas estandarizado mediante `merge()`:
   - `Environment`: `upper(var.environment)` (`DEV`, `QA`, `PROD`).
-  - `Owner`: `join(", ", [for i in var.integrantes : title(trimspace(i))])` (`Fernando Galdamez`).
+  - `Owner`: `join(", ", [for i in var.integrantes : title(trimspace(i))])` (`Fernando Galdamez, Jose Villaroel`).
   - `Project`: `title(var.proyecto)` (`Plataforma`).
   - `Asignatura`: `"AUY1103"`.
   - `ManagedBy`: `"Terraform"`.

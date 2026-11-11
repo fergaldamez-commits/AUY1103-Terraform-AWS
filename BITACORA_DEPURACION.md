@@ -2,7 +2,7 @@
 
 **Asignatura:** AUY1103 - Infraestructura como Código I  
 **Evaluación:** Evaluación Parcial N° 3  
-**Estudiante:** Fernando Galdamez (`fer.galdamez@duocuc.cl`)  
+**Integrantes:** Fernando Galdamez | Jose Villaroel (`fer.galdamez@duocuc.cl`)  
 **Institución:** Duoc UC  
 **Fecha:** Noviembre 2026  
 

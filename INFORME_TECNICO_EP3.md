@@ -1,7 +1,7 @@
 # Informe Técnico Evaluación Parcial N° 3 (AUY1103)
 ## Parametrización Multi-Ambiente, Funciones Built-in, Expresiones Condicionales y Persistencia en AWS con Terraform
 
-- **Estudiante:** Fernando Galdamez (`fer.galdamez@duocuc.cl`)
+- **Integrantes:** Fernando Galdamez | Jose Villaroel (`fer.galdamez@duocuc.cl`)
 - **Asignatura:** AUY1103 – Infraestructura como Código I
 - **Institución:** Duoc UC – Escuela de Informática y Telecomunicaciones
 - **Cuenta AWS Academy Learner Lab:** `1510-6332-3597` (`voclabs/user4133678=fer.galdamez@duocuc.cl`)
@@ -23,7 +23,7 @@ Todos los nombres de recursos, etiquetas obligatorias (`Environment`, `Owner`, `
 | :--- | :--- | :--- | :---: | :--- |
 | **Cadenas** | `lower()` | `locals.tf` | 6 | Normaliza el prefijo general a minúsculas (`duoc-plataforma-dev`). |
 | **Cadenas** | `upper()` | `locals.tf` | 14 | Convierte el ambiente a mayúsculas (`DEV`, `QA`, `PROD`) para etiquetas y sitio estático. |
-| **Cadenas** | `title()` | `locals.tf` | 15, 16 | Capitaliza los nombres de los integrantes (`Fernando Galdamez`) y del proyecto (`Plataforma`). |
+| **Cadenas** | `title()` | `locals.tf` | 15, 16 | Capitaliza los nombres de los integrantes (`Fernando Galdamez, Jose Villaroel`) y del proyecto (`Plataforma`). |
 | **Cadenas** | `trimspace()` | `locals.tf` | 6, 15 | Elimina espacios accidentales al inicio o final de las variables de entrada. |
 | **Cadenas** | `replace()` | `locals.tf` | 6 | Reemplaza espacios internos por guiones en nombres de empresa y proyecto. |
 | **Cadenas** | `substr()` | `locals.tf` | 9 | Trunca el prefijo a un máximo de 32 caracteres para nombres de ALB y Target Groups. |
@@ -74,7 +74,7 @@ Todos los nombres de recursos, etiquetas obligatorias (`Environment`, `Owner`, `
 ## 4. Evidencias Reales Capturadas en Navegador y AWS CloudShell
 
 ### 4.1. Sitio Estático Nginx (`ALB Web`)
-Respuesta HTTP 200 en el navegador sobre `http://duoc-plataforma-dev-web-1638812590.us-east-1.elb.amazonaws.com` mostrando el ambiente en mayúsculas (`DEV`) y el nombre del alumno con `title()` (`Fernando Galdamez`):
+Respuesta HTTP 200 en el navegador sobre `http://duoc-plataforma-dev-web-1638812590.us-east-1.elb.amazonaws.com` mostrando el ambiente en mayúsculas (`DEV`) y el nombre del alumno con `title()` (`Fernando Galdamez, Jose Villaroel`):
 
 ![Captura ALB Web](./captura_alb_web.png)
 

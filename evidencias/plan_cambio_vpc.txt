@@ -81,7 +81,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-mysql"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all                              = {
@@ -89,7 +89,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-mysql"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + timezone                              = (known after apply)
@@ -113,7 +113,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-rds-subnets"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all                = {
@@ -121,7 +121,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-rds-subnets"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + vpc_id                  = (known after apply)
@@ -160,7 +160,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-alb-api"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all                                                     = {
@@ -168,7 +168,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-alb-api"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + vpc_id                                                       = (known after apply)
@@ -211,7 +211,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-alb-web"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all                                                     = {
@@ -219,7 +219,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-alb-web"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + vpc_id                                                       = (known after apply)
@@ -261,7 +261,7 @@ Terraform will perform the following actions:
           + "Asignatura"  = "AUY1103"
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tcp_idle_timeout_seconds                                              = (known after apply)
@@ -307,7 +307,7 @@ Terraform will perform the following actions:
           + "Asignatura"  = "AUY1103"
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tcp_idle_timeout_seconds                                              = (known after apply)
@@ -347,14 +347,14 @@ Terraform will perform the following actions:
           + "Asignatura"  = "AUY1103"
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all                           = {
           + "Asignatura"  = "AUY1103"
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + target_type                        = "instance"
@@ -407,14 +407,14 @@ Terraform will perform the following actions:
           + "Asignatura"  = "AUY1103"
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all                           = {
           + "Asignatura"  = "AUY1103"
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + target_type                        = "instance"
@@ -526,7 +526,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-alb-api-sg"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all               = {
@@ -534,7 +534,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-alb-api-sg"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + vpc_id                 = (known after apply)
@@ -598,7 +598,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-alb-web-sg"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all               = {
@@ -606,7 +606,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-alb-web-sg"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + vpc_id                 = (known after apply)
@@ -657,7 +657,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-sg-monitoreo"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all               = {
@@ -665,7 +665,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-sg-monitoreo"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + vpc_id                 = (known after apply)
@@ -727,7 +727,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-rds-sg"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all               = {
@@ -735,7 +735,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-rds-sg"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + vpc_id                 = (known after apply)
@@ -805,7 +805,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-backend-01"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Rol"         = "backend"
         }
@@ -815,7 +815,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-backend-01"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Rol"         = "backend"
         }
@@ -934,7 +934,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-backend-01-sg"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Rol"         = "backend"
         }
@@ -944,7 +944,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-backend-01-sg"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Rol"         = "backend"
         }
@@ -997,7 +997,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-backend-02"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Rol"         = "backend"
         }
@@ -1007,7 +1007,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-backend-02"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Rol"         = "backend"
         }
@@ -1126,7 +1126,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-backend-02-sg"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Rol"         = "backend"
         }
@@ -1136,7 +1136,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-backend-02-sg"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Rol"         = "backend"
         }
@@ -1158,7 +1158,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all                = {
@@ -1166,7 +1166,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + vpc_id                  = (known after apply)
@@ -1184,7 +1184,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-default"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all               = {
@@ -1192,7 +1192,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-default"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + vpc_id                 = (known after apply)
@@ -1249,7 +1249,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-default"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all               = {
@@ -1257,7 +1257,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-default"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + vpc_id                 = (known after apply)
@@ -1285,7 +1285,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-default"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all               = {
@@ -1293,7 +1293,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-default"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + vpc_id                 = (known after apply)
@@ -1310,7 +1310,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all = {
@@ -1318,7 +1318,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + vpc_id   = (known after apply)
@@ -1355,7 +1355,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-private-us-east-1a"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all         = {
@@ -1363,7 +1363,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-private-us-east-1a"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + vpc_id           = (known after apply)
@@ -1382,7 +1382,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-private-us-east-1b"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all         = {
@@ -1390,7 +1390,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-private-us-east-1b"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + vpc_id           = (known after apply)
@@ -1409,7 +1409,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-private-us-east-1c"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all         = {
@@ -1417,7 +1417,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-private-us-east-1c"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + vpc_id           = (known after apply)
@@ -1436,7 +1436,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-public"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all         = {
@@ -1444,7 +1444,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-public"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + vpc_id           = (known after apply)
@@ -1545,7 +1545,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-db-us-east-1a"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Tier"        = "database"
         }
@@ -1554,7 +1554,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-db-us-east-1a"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Tier"        = "database"
         }
@@ -1584,7 +1584,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-db-us-east-1b"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Tier"        = "database"
         }
@@ -1593,7 +1593,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-db-us-east-1b"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Tier"        = "database"
         }
@@ -1623,7 +1623,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-db-us-east-1c"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Tier"        = "database"
         }
@@ -1632,7 +1632,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-db-us-east-1c"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Tier"        = "database"
         }
@@ -1662,7 +1662,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-private-us-east-1a"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Tier"        = "private"
         }
@@ -1671,7 +1671,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-private-us-east-1a"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Tier"        = "private"
         }
@@ -1701,7 +1701,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-private-us-east-1b"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Tier"        = "private"
         }
@@ -1710,7 +1710,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-private-us-east-1b"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Tier"        = "private"
         }
@@ -1740,7 +1740,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-private-us-east-1c"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Tier"        = "private"
         }
@@ -1749,7 +1749,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-private-us-east-1c"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Tier"        = "private"
         }
@@ -1779,7 +1779,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-public-us-east-1a"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Tier"        = "public"
         }
@@ -1788,7 +1788,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-public-us-east-1a"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Tier"        = "public"
         }
@@ -1818,7 +1818,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-public-us-east-1b"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Tier"        = "public"
         }
@@ -1827,7 +1827,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-public-us-east-1b"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Tier"        = "public"
         }
@@ -1857,7 +1857,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-public-us-east-1c"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Tier"        = "public"
         }
@@ -1866,7 +1866,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc-public-us-east-1c"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Tier"        = "public"
         }
@@ -1897,7 +1897,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all                             = {
@@ -1905,7 +1905,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-vpc"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
     }
@@ -1955,7 +1955,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-web"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Rol"         = "webserver"
         }
@@ -1964,7 +1964,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-web"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Rol"         = "webserver"
         }
@@ -1993,7 +1993,7 @@ Terraform will perform the following actions:
             <body style="font-family:sans-serif;text-align:center;margin-top:10%">
               <h1>WebServer Estático - duoc plataforma</h1>
               <h2>Ambiente: DEV</h2>
-              <h3>Alumno: Fernando Galdamez</h3>
+              <h3>Alumnos: Fernando Galdamez, Jose Villaroel</h3>
             </body>
             </html>
             HTML
@@ -2092,7 +2092,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-web-sg"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Rol"         = "webserver"
         }
@@ -2101,7 +2101,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-web-sg"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
           + "Rol"         = "webserver"
         }

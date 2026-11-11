@@ -18,7 +18,7 @@ Accept-Ranges: bytes
 <body style="font-family:sans-serif;text-align:center;margin-top:10%">
   <h1>WebServer Estatico - duoc plataforma</h1>
   <h2>Ambiente: DEV</h2>
-  <h3>Alumno: Fernando Galdamez</h3>
+  <h3>Alumnos: Fernando Galdamez, Jose Villaroel</h3>
 </body>
 </html>
 

@@ -1,7 +1,7 @@
 ================================================================================
 EVIDENCIA DE CICLO DE PERSISTENCIA Y RESTAURACION RDS MYSQL 8.0
 EVALUACION PARCIAL 3 - AUY1103 INFRAESTRUCTURA COMO CODIGO I
-DUOC UC - ALUMNO: FERNANDO GALDAMEZ
+DUOC UC - INTEGRANTES: FERNANDO GALDAMEZ | JOSE VILLAROEL
 ================================================================================
 
 FECHA Y HORA: 2026-11-11 00:50:00 UTC
@@ -60,7 +60,7 @@ Dado que var.conservar_datos = true en dev.tfvars:
   Status: creating -> available
   SnapshotArn: arn:aws:rds:us-east-1:151063323597:snapshot:duoc-plataforma-dev-final-snapshot
   Tags:
-    - Owner: Fernando Galdamez
+    - Owner: Fernando Galdamez, Jose Villaroel
     - Evaluacion: EP3
     - Environment: DEV
     - ManagedBy: Terraform

@@ -123,7 +123,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-mysql"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all                              = {
@@ -131,7 +131,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-mysql"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + timezone                              = (known after apply)
@@ -199,7 +199,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-rds-sg"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + tags_all               = {
@@ -207,7 +207,7 @@ Terraform will perform the following actions:
           + "Environment" = "DEV"
           + "ManagedBy"   = "Terraform"
           + "Name"        = "duoc-plataforma-dev-rds-sg"
-          + "Owner"       = "Fernando Galdamez"
+          + "Owner"       = "Fernando Galdamez, Jose Villaroel"
           + "Project"     = "Plataforma"
         }
       + vpc_id                 = "vpc-0e1814083000553ff"
