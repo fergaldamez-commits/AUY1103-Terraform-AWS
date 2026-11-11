@@ -31,7 +31,7 @@ variable "proyecto" {
 variable "integrantes" {
   description = "Lista de nombres de los integrantes a cargo del proyecto."
   type        = list(string)
-  default     = ["fernando galdamez"]
+  default     = ["fernando galdamez", "jose villaroel"]
 }
 
 variable "vpc_cidr" {
