@@ -1,0 +1,38 @@
+﻿>>> local.prefijo
+"duoc-plataforma-dev"
+
+>>> lookup(local.config, var.environment, null).backends_count
+2
+
+>>> local.subredes_publicas
+(known after apply)
+
+>>> local.reglas_filtradas
+[
+  {
+    "ambientes" = [
+      "dev",
+    ]
+    "cidr_blocks" = [
+      (known after apply),
+    ]
+    "descripcion" = "Acceso SSH administrativo para ambiente de desarrollo"
+    "puerto" = 22
+  },
+  {
+    "ambientes" = [
+      "dev",
+      "qa",
+      "prod",
+    ]
+    "cidr_blocks" = [
+      "0.0.0.0/0",
+    ]
+    "descripcion" = "Trafico web HTTP publico"
+    "puerto" = 80
+  },
+]
+
+>>> local.es_prod ? "PRODUCCION_ACTIVA" : "AMBIENTE_NO_PRODUCTIVO"
+"AMBIENTE_NO_PRODUCTIVO"
+

@@ -1,0 +1,31 @@
+﻿=== TEST ALB WEB HTTP ===
+HTTP/1.1 200 OK
+Date: Wed, 11 Nov 2026 01:15:20 GMT
+Content-Type: text/html
+Content-Length: 311
+Connection: keep-alive
+Server: nginx/1.24.0 (Ubuntu)
+Last-Modified: Wed, 11 Nov 2026 01:13:05 GMT
+ETag: "6af3c121-137"
+Accept-Ranges: bytes
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>duoc - plataforma (DEV)</title>
+</head>
+<body style="font-family:sans-serif;text-align:center;margin-top:10%">
+  <h1>WebServer Estatico - duoc plataforma</h1>
+  <h2>Ambiente: DEV</h2>
+  <h3>Alumno: Fernando Galdamez</h3>
+</body>
+</html>
+
+=== TEST ALB BACKEND (ROTACION DOCKER) ===
+Peticion 1 -> Contenedor: web-backend-01
+Peticion 2 -> Contenedor: web-backend-01
+Peticion 3 -> Contenedor: web-backend-02
+Peticion 4 -> Contenedor: web-backend-01
+Peticion 5 -> Contenedor: web-backend-02
+Peticion 6 -> Contenedor: web-backend-01

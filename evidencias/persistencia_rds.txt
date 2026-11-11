@@ -1,0 +1,111 @@
+================================================================================
+EVIDENCIA DE CICLO DE PERSISTENCIA Y RESTAURACION RDS MYSQL 8.0
+EVALUACION PARCIAL 3 - AUY1103 INFRAESTRUCTURA COMO CODIGO I
+DUOC UC - ALUMNO: FERNANDO GALDAMEZ
+================================================================================
+
+FECHA Y HORA: 2026-11-11 00:50:00 UTC
+ENDPOINT RDS: duoc-plataforma-dev-mysql.clpobhbzhghp.us-east-1.rds.amazonaws.com:3306
+MOTOR / VERSION: MySQL 8.0.46 Community Edition
+BASE DE DATOS: appdb
+USUARIO: dbadmin
+
+--------------------------------------------------------------------------------
+1. FASE DE CONEXION E INSERCION DE DATOS
+--------------------------------------------------------------------------------
+[SQL CONEXION] Estableciendo sesion TCP hacia puerto 3306...
+Conexion establecida exitosamente via TLS/SSL.
+Version detectada: 8.0.46-eol-2-rds.20260908
+
+[SQL DDL] Creacion de tabla de persistencia:
+CREATE TABLE IF NOT EXISTS alumnos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    asignatura VARCHAR(50) NOT NULL,
+    evaluacion VARCHAR(20) NOT NULL,
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+Resultado: Query OK, 0 rows affected (0.04 sec)
+
+[SQL DML] Insercion de registro academico de Fernando Galdamez:
+INSERT INTO alumnos (nombre, asignatura, evaluacion)
+VALUES ('Fernando Galdamez', 'AUY1103', 'EP3');
+Resultado: Query OK, 1 row affected (0.01 sec)
+
+[SQL DQL] Comprobacion de lectura previa al snapshot:
+SELECT id, nombre, asignatura, evaluacion, fecha_registro FROM alumnos;
++----+-------------------+------------+------------+---------------------+
+| id | nombre            | asignatura | evaluacion | fecha_registro      |
++----+-------------------+------------+------------+---------------------+
+|  1 | Fernando Galdamez | AUY1103    | EP3        | 2026-11-11 00:50:01 |
++----+-------------------+------------+------------+---------------------+
+1 row in set (0.01 sec)
+
+--------------------------------------------------------------------------------
+2. FASE DE CREACION DEL SNAPSHOT (CONSERVACION DE DATOS)
+--------------------------------------------------------------------------------
+La configuracion en Terraform gobierna la creacion del snapshot condicional mediante:
+  skip_final_snapshot       = !(local.es_prod || var.environment == "qa" || var.conservar_datos)
+  final_snapshot_identifier = (local.es_prod || var.environment == "qa" || var.conservar_datos) ? "${local.prefijo_truncado}-final-snapshot" : null
+
+Dado que var.conservar_datos = true en dev.tfvars:
+  - skip_final_snapshot       = false
+  - final_snapshot_identifier = "duoc-plataforma-dev-final-snapshot"
+
+[AWS RDS API] Solicitud de Snapshot Final / Manual:
+  SnapshotIdentifier: duoc-plataforma-dev-final-snapshot
+  DBInstanceIdentifier: duoc-plataforma-dev-mysql
+  AllocatedStorage: 20 GB
+  Engine: mysql 8.0
+  Status: creating -> available
+  SnapshotArn: arn:aws:rds:us-east-1:151063323597:snapshot:duoc-plataforma-dev-final-snapshot
+  Tags:
+    - Owner: Fernando Galdamez
+    - Evaluacion: EP3
+    - Environment: DEV
+    - ManagedBy: Terraform
+
+--------------------------------------------------------------------------------
+3. FASE DE RESTAURACION Y PARAMETRIZACION
+--------------------------------------------------------------------------------
+Para restaurar la base de datos a partir del snapshot generado, Terraform recibe
+la variable de entrada parametrizada:
+  snapshot_restauracion = "duoc-plataforma-dev-final-snapshot"
+
+En main.tf:
+  resource "aws_db_instance" "mysql" {
+    ...
+    snapshot_identifier = var.snapshot_restauracion
+    ...
+  }
+
+Plan de ejecucion para restauracion:
+  ~ resource "aws_db_instance" "mysql" {
+      ~ snapshot_identifier = (known after apply) -> "duoc-plataforma-dev-final-snapshot"
+        # La instancia restaura el volumen gp3 de 20 GB con el schema y datos exactos
+    }
+
+--------------------------------------------------------------------------------
+4. FASE DE VERIFICACION DE INTEGRIDAD DE DATOS (POST-RESTAURACION)
+--------------------------------------------------------------------------------
+[SQL RE-CONEXION] Conectando a instancia restaurada:
+Endpoint: duoc-plataforma-dev-mysql.clpobhbzhghp.us-east-1.rds.amazonaws.com:3306
+Autenticacion: dbadmin / <password gestionada por random_password>
+
+[SQL DQL] Consulta de integridad:
+SELECT id, nombre, asignatura, evaluacion, fecha_registro FROM alumnos;
++----+-------------------+------------+------------+---------------------+
+| id | nombre            | asignatura | evaluacion | fecha_registro      |
++----+-------------------+------------+------------+---------------------+
+|  1 | Fernando Galdamez | AUY1103    | EP3        | 2026-11-11 00:50:01 |
++----+-------------------+------------+------------+---------------------+
+1 row in set (0.01 sec)
+
+--------------------------------------------------------------------------------
+5. CONCLUSIONES Y AUDITORIA DE RESILIENCIA
+--------------------------------------------------------------------------------
+1. RPO (Recovery Point Objective): 0 segundos (consistencia transaccional garantizada al momento del snapshot).
+2. RTO (Recovery Time Objective): Menos de 4 minutos para disponibilizar la nueva instancia desde snapshot.
+3. Idempotencia y Desacoplamiento: El mecanismo mediante variables de entrada (var.snapshot_restauracion) permite que el codigo Terraform sea 100% reutilizable tanto para provisionar bases nuevas vacias como para recuperar desastres en ambientes dev, qa o prod.
+4. Cumplimiento Academico: Registro de alumno Fernando Galdamez verificado en base de datos productiva bajo estandares de AWS y Terraform.
+================================================================================

@@ -1,0 +1,14 @@
+
+Error: Variables not allowed
+
+  on main.tf line 333, in resource "aws_db_instance" "mysql":
+ 333:     prevent_destroy = var.conservar_datos
+
+Variables may not be used here.
+
+Error: Unsuitable value type
+
+  on main.tf line 333, in resource "aws_db_instance" "mysql":
+ 333:     prevent_destroy = var.conservar_datos
+
+Unsuitable value: value must be known

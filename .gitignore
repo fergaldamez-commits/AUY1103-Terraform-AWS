@@ -1,0 +1,34 @@
+# Directorio local de providers/módulos
+.terraform/
+**/.terraform/*
+
+# Estado (contiene secretos en texto plano)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Planes binarios
+*.tfplan
+*.plan
+
+# Logs y crash
+crash.log
+crash.*.log
+terraform.log
+
+# Overrides locales
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config
+.terraformrc
+terraform.rc
+
+# Credenciales y archivos locales
+.aws/
+*.pem
+*.key
+
+# .terraform.lock.hcl NO se ignora: estándar de HashiCorp para reproducibilidad

@@ -1,0 +1,293 @@
+random_password.rds: Refreshing state... [id=none]
+data.http.mi_ip: Reading...
+data.http.mi_ip: Read complete after 1s [id=https://checkip.amazonaws.com]
+data.aws_availability_zones.available: Reading...
+data.aws_ami.ubuntu: Reading...
+data.aws_region.current: Reading...
+module.vpc.aws_vpc.this[0]: Refreshing state... [id=vpc-0e1814083000553ff]
+data.aws_region.current: Read complete after 0s [id=us-east-1]
+data.aws_availability_zones.available: Read complete after 0s [id=us-east-1]
+data.aws_ami.ubuntu: Read complete after 1s [id=ami-08b275ac6cc5dbefb]
+module.vpc.aws_default_route_table.default[0]: Refreshing state... [id=rtb-0227e668eeb914fca]
+module.vpc.aws_default_security_group.this[0]: Refreshing state... [id=sg-03509ad6d937224a6]
+aws_security_group.monitoreo[0]: Refreshing state... [id=sg-0e54a05e3afbacd60]
+aws_lb_target_group.api: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/duoc-plataforma-dev-tg-api/440bf6d15c68cc25]
+module.vpc.aws_subnet.database[0]: Refreshing state... [id=subnet-00524c5e9449fa11d]
+aws_lb_target_group.web: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/duoc-plataforma-dev-tg-web/3533e249d5cfc16f]
+module.vpc.aws_subnet.database[1]: Refreshing state... [id=subnet-05a984697deecda4a]
+module.vpc.aws_default_network_acl.this[0]: Refreshing state... [id=acl-0200d79fdad3dda0e]
+aws_security_group.alb["api"]: Refreshing state... [id=sg-0c47b8229973f2f2c]
+aws_security_group.alb["web"]: Refreshing state... [id=sg-04b7f913926aafcc7]
+module.vpc.aws_route_table.private[0]: Refreshing state... [id=rtb-050e3b271b7b4409d]
+module.vpc.aws_route_table.private[1]: Refreshing state... [id=rtb-05df8d1dfbcc7f1d6]
+module.vpc.aws_subnet.private[1]: Refreshing state... [id=subnet-09f85575ed57c33b2]
+module.vpc.aws_subnet.private[0]: Refreshing state... [id=subnet-0044d9ecab303658c]
+module.vpc.aws_route_table.public[0]: Refreshing state... [id=rtb-07aaf5bf7eb310b0b]
+module.vpc.aws_internet_gateway.this[0]: Refreshing state... [id=igw-03d894eca969c7832]
+module.vpc.aws_subnet.public[0]: Refreshing state... [id=subnet-0cdfb8902fdbe4203]
+module.vpc.aws_subnet.public[1]: Refreshing state... [id=subnet-0740aa25fd2b6a59b]
+module.vpc.aws_db_subnet_group.database[0]: Refreshing state... [id=duoc-plataforma-dev-vpc]
+module.vpc.aws_route_table_association.database[0]: Refreshing state... [id=rtbassoc-0b9b705e926b438ad]
+module.vpc.aws_route_table_association.database[1]: Refreshing state... [id=rtbassoc-03ef81f9fceadc71a]
+module.web.aws_security_group.this: Refreshing state... [id=sg-093e78ace6269a0d1]
+module.backend["backend-02"].aws_security_group.this: Refreshing state... [id=sg-063794aa4a72056d7]
+module.backend["backend-01"].aws_security_group.this: Refreshing state... [id=sg-0c21fcebd51c37b39]
+module.vpc.aws_route_table_association.private[0]: Refreshing state... [id=rtbassoc-0283e485181672718]
+module.vpc.aws_route_table_association.private[1]: Refreshing state... [id=rtbassoc-02c49ad17ba3477b0]
+module.vpc.aws_route.public_internet_gateway[0]: Refreshing state... [id=r-rtb-07aaf5bf7eb310b0b1080289494]
+module.vpc.aws_route_table_association.public[0]: Refreshing state... [id=rtbassoc-02b1da794e564a3ee]
+module.vpc.aws_route_table_association.public[1]: Refreshing state... [id=rtbassoc-03fdbd27cc315433f]
+aws_db_subnet_group.rds: Refreshing state... [id=duoc-plataforma-dev-rds-subnets]
+aws_lb.web: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:loadbalancer/app/duoc-plataforma-dev-web/364042fe0310bea4]
+aws_lb.api: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:loadbalancer/app/duoc-plataforma-dev-api/7577bf4ab07144a6]
+module.web.aws_instance.this: Refreshing state... [id=i-006ad00bb90071dc2]
+module.backend["backend-02"].aws_instance.this: Refreshing state... [id=i-0cc269abed4da1205]
+module.backend["backend-01"].aws_instance.this: Refreshing state... [id=i-01c92faa70566b86c]
+aws_lb_listener.web_http: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:listener/app/duoc-plataforma-dev-web/364042fe0310bea4/2c9a1842b736e683]
+aws_lb_listener.api_http: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:listener/app/duoc-plataforma-dev-api/7577bf4ab07144a6/9655a32cf40425ea]
+aws_lb_target_group_attachment.web: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/duoc-plataforma-dev-tg-web/3533e249d5cfc16f,i-006ad00bb90071dc2,80]
+aws_lb_target_group_attachment.api["backend-01"]: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/duoc-plataforma-dev-tg-api/440bf6d15c68cc25,i-01c92faa70566b86c,80]
+aws_lb_target_group_attachment.api["backend-02"]: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:151063323597:targetgroup/duoc-plataforma-dev-tg-api/440bf6d15c68cc25,i-0cc269abed4da1205,80]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysql will be created
+  + resource "aws_db_instance" "mysql" {
+      + address                               = (known after apply)
+      + allocated_storage                     = 20
+      + apply_immediately                     = true
+      + arn                                   = (known after apply)
+      + auto_minor_version_upgrade            = true
+      + availability_zone                     = (known after apply)
+      + backup_retention_period               = 1
+      + backup_target                         = (known after apply)
+      + backup_window                         = (known after apply)
+      + ca_cert_identifier                    = (known after apply)
+      + character_set_name                    = (known after apply)
+      + copy_tags_to_snapshot                 = false
+      + database_insights_mode                = (known after apply)
+      + db_name                               = "appdb"
+      + db_subnet_group_name                  = "duoc-plataforma-dev-rds-subnets"
+      + dedicated_log_volume                  = false
+      + delete_automated_backups              = true
+      + deletion_protection                   = false
+      + domain_fqdn                           = (known after apply)
+      + endpoint                              = (known after apply)
+      + engine                                = "mysql"
+      + engine_lifecycle_support              = (known after apply)
+      + engine_version                        = "8.0"
+      + engine_version_actual                 = (known after apply)
+      + final_snapshot_identifier             = "duoc-plataforma-dev-final-snapshot"
+      + hosted_zone_id                        = (known after apply)
+      + id                                    = (known after apply)
+      + identifier                            = "duoc-plataforma-dev-mysql"
+      + identifier_prefix                     = (known after apply)
+      + instance_class                        = "db.t3.micro"
+      + iops                                  = (known after apply)
+      + kms_key_id                            = (known after apply)
+      + latest_restorable_time                = (known after apply)
+      + license_model                         = (known after apply)
+      + listener_endpoint                     = (known after apply)
+      + maintenance_window                    = (known after apply)
+      + master_user_secret                    = (known after apply)
+      + master_user_secret_kms_key_id         = (known after apply)
+      + monitoring_interval                   = 0
+      + monitoring_role_arn                   = (known after apply)
+      + multi_az                              = false
+      + nchar_character_set_name              = (known after apply)
+      + network_type                          = (known after apply)
+      + option_group_name                     = (known after apply)
+      + parameter_group_name                  = (known after apply)
+      + password                              = (sensitive value)
+      + performance_insights_enabled          = false
+      + performance_insights_kms_key_id       = (known after apply)
+      + performance_insights_retention_period = (known after apply)
+      + port                                  = (known after apply)
+      + publicly_accessible                   = true
+      + region                                = "us-east-1"
+      + replica_mode                          = (known after apply)
+      + replicas                              = (known after apply)
+      + resource_id                           = (known after apply)
+      + skip_final_snapshot                   = false
+      + snapshot_identifier                   = (known after apply)
+      + status                                = (known after apply)
+      + storage_encrypted                     = true
+      + storage_throughput                    = (known after apply)
+      + storage_type                          = "gp3"
+      + tags                                  = {
+          + "Asignatura"  = "AUY1103"
+          + "Environment" = "DEV"
+          + "ManagedBy"   = "Terraform"
+          + "Name"        = "duoc-plataforma-dev-mysql"
+          + "Owner"       = "Fernando Galdamez"
+          + "Project"     = "Plataforma"
+        }
+      + tags_all                              = {
+          + "Asignatura"  = "AUY1103"
+          + "Environment" = "DEV"
+          + "ManagedBy"   = "Terraform"
+          + "Name"        = "duoc-plataforma-dev-mysql"
+          + "Owner"       = "Fernando Galdamez"
+          + "Project"     = "Plataforma"
+        }
+      + timezone                              = (known after apply)
+      + upgrade_rollout_order                 = (known after apply)
+      + username                              = "dbadmin"
+      + vpc_security_group_ids                = (known after apply)
+    }
+
+  # aws_security_group.rds will be created
+  + resource "aws_security_group" "rds" {
+      + arn                    = (known after apply)
+      + description            = "Acceso a MySQL puerto 3306"
+      + egress                 = [
+          + {
+              + cidr_blocks      = [
+                  + "0.0.0.0/0",
+                ]
+              + description      = "Salida total"
+              + from_port        = 0
+              + ipv6_cidr_blocks = []
+              + prefix_list_ids  = []
+              + protocol         = "-1"
+              + security_groups  = []
+              + self             = false
+              + to_port          = 0
+            },
+        ]
+      + id                     = (known after apply)
+      + ingress                = [
+          + {
+              + cidr_blocks      = [
+                  + "181.42.180.92/32",
+                ]
+              + description      = "MySQL desde IP del operador"
+              + from_port        = 3306
+              + ipv6_cidr_blocks = []
+              + prefix_list_ids  = []
+              + protocol         = "tcp"
+              + security_groups  = []
+              + self             = false
+              + to_port          = 3306
+            },
+          + {
+              + cidr_blocks      = []
+              + description      = "MySQL desde cluster de backends"
+              + from_port        = 3306
+              + ipv6_cidr_blocks = []
+              + prefix_list_ids  = []
+              + protocol         = "tcp"
+              + security_groups  = [
+                  + "sg-063794aa4a72056d7",
+                  + "sg-0c21fcebd51c37b39",
+                ]
+              + self             = false
+              + to_port          = 3306
+            },
+        ]
+      + name                   = (known after apply)
+      + name_prefix            = "duoc-plataforma-dev-rds-"
+      + owner_id               = (known after apply)
+      + region                 = "us-east-1"
+      + revoke_rules_on_delete = false
+      + tags                   = {
+          + "Asignatura"  = "AUY1103"
+          + "Environment" = "DEV"
+          + "ManagedBy"   = "Terraform"
+          + "Name"        = "duoc-plataforma-dev-rds-sg"
+          + "Owner"       = "Fernando Galdamez"
+          + "Project"     = "Plataforma"
+        }
+      + tags_all               = {
+          + "Asignatura"  = "AUY1103"
+          + "Environment" = "DEV"
+          + "ManagedBy"   = "Terraform"
+          + "Name"        = "duoc-plataforma-dev-rds-sg"
+          + "Owner"       = "Fernando Galdamez"
+          + "Project"     = "Plataforma"
+        }
+      + vpc_id                 = "vpc-0e1814083000553ff"
+    }
+
+Plan: 2 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  + rds_endpoint         = (known after apply)
+aws_security_group.rds: Creating...
+aws_security_group.rds: Creation complete after 5s [id=sg-0e68f751705dcf543]
+aws_db_instance.mysql: Creating...
+aws_db_instance.mysql: Still creating... [10s elapsed]
+aws_db_instance.mysql: Still creating... [20s elapsed]
+aws_db_instance.mysql: Still creating... [30s elapsed]
+aws_db_instance.mysql: Still creating... [40s elapsed]
+aws_db_instance.mysql: Still creating... [50s elapsed]
+aws_db_instance.mysql: Still creating... [1m0s elapsed]
+aws_db_instance.mysql: Still creating... [1m10s elapsed]
+aws_db_instance.mysql: Still creating... [1m20s elapsed]
+aws_db_instance.mysql: Still creating... [1m30s elapsed]
+aws_db_instance.mysql: Still creating... [1m40s elapsed]
+aws_db_instance.mysql: Still creating... [1m50s elapsed]
+aws_db_instance.mysql: Still creating... [2m0s elapsed]
+aws_db_instance.mysql: Still creating... [2m10s elapsed]
+aws_db_instance.mysql: Still creating... [2m20s elapsed]
+aws_db_instance.mysql: Still creating... [2m30s elapsed]
+aws_db_instance.mysql: Still creating... [2m40s elapsed]
+aws_db_instance.mysql: Still creating... [2m50s elapsed]
+aws_db_instance.mysql: Still creating... [3m0s elapsed]
+aws_db_instance.mysql: Still creating... [3m10s elapsed]
+aws_db_instance.mysql: Still creating... [3m20s elapsed]
+aws_db_instance.mysql: Still creating... [3m30s elapsed]
+aws_db_instance.mysql: Still creating... [3m40s elapsed]
+aws_db_instance.mysql: Still creating... [3m50s elapsed]
+aws_db_instance.mysql: Still creating... [4m0s elapsed]
+aws_db_instance.mysql: Still creating... [4m10s elapsed]
+aws_db_instance.mysql: Still creating... [4m20s elapsed]
+aws_db_instance.mysql: Still creating... [4m30s elapsed]
+aws_db_instance.mysql: Still creating... [4m40s elapsed]
+aws_db_instance.mysql: Still creating... [4m50s elapsed]
+aws_db_instance.mysql: Still creating... [5m0s elapsed]
+aws_db_instance.mysql: Still creating... [5m10s elapsed]
+aws_db_instance.mysql: Still creating... [5m20s elapsed]
+aws_db_instance.mysql: Still creating... [5m30s elapsed]
+aws_db_instance.mysql: Still creating... [5m40s elapsed]
+aws_db_instance.mysql: Still creating... [5m50s elapsed]
+aws_db_instance.mysql: Still creating... [6m0s elapsed]
+aws_db_instance.mysql: Still creating... [6m10s elapsed]
+aws_db_instance.mysql: Still creating... [6m20s elapsed]
+aws_db_instance.mysql: Still creating... [6m30s elapsed]
+aws_db_instance.mysql: Still creating... [6m40s elapsed]
+aws_db_instance.mysql: Still creating... [6m50s elapsed]
+aws_db_instance.mysql: Still creating... [7m0s elapsed]
+aws_db_instance.mysql: Still creating... [7m10s elapsed]
+aws_db_instance.mysql: Still creating... [7m20s elapsed]
+aws_db_instance.mysql: Still creating... [7m30s elapsed]
+aws_db_instance.mysql: Still creating... [7m40s elapsed]
+aws_db_instance.mysql: Still creating... [7m50s elapsed]
+aws_db_instance.mysql: Still creating... [8m0s elapsed]
+aws_db_instance.mysql: Still creating... [8m10s elapsed]
+aws_db_instance.mysql: Still creating... [8m20s elapsed]
+aws_db_instance.mysql: Creation complete after 8m25s [id=db-6VA6RNLI46UVZXOX5WDI7KRAOQ]
+
+Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+alb_backend_dns = "http://duoc-plataforma-dev-api-1227717491.us-east-1.elb.amazonaws.com"
+alb_web_dns = "http://duoc-plataforma-dev-web-1711560361.us-east-1.elb.amazonaws.com"
+backend_instance_ids = {
+  "backend-01" = "i-01c92faa70566b86c"
+  "backend-02" = "i-0cc269abed4da1205"
+}
+metadata_despliegue = "{\"ambiente\":\"dev\",\"prefijo\":\"duoc-plataforma-dev\",\"subredes\":6}"
+monitoreo_sg_id = "sg-0e54a05e3afbacd60"
+nat_gateway_ip = "NAT deshabilitado en dev"
+rds_endpoint = "duoc-plataforma-dev-mysql.clpobhbzhghp.us-east-1.rds.amazonaws.com:3306"
+rds_password = <sensitive>
+subredes_datos_ids = tolist([
+  "subnet-00524c5e9449fa11d",
+  "subnet-05a984697deecda4a",
+])
